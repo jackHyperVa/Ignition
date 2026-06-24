@@ -1,0 +1,8 @@
+{
+  "name": "ignition-opc-ua-simulator",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "node-opcua": "^2.119.0"
+  }
+}

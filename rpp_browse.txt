@@ -1,0 +1,1483 @@
+Connecting to opc.tcp://172.17.20.98:4840 ...
+Connected.
+
+Browsing full device tree ...
+
+[Objects]  (i=85)
+├─ [Object] Server  (i=2253)
+│ ├─ ServerStatus  =  ServerStatusDataType(StartTime=datetime.datetime(2026, 6, 18, 12, 43, 40, 567950, tzinfo=datetime.timezone.utc), CurrentTime=datetime.datetime(2026, 6, 18, 19, 4, 31, 849648, tzinfo=datetime.timezone.utc), State=<ServerState.Running: 0>, BuildInfo=BuildInfo(ProductUri='https://opc.janitza.de/umg800', ManufacturerName='Janitza electronics GmbH', ProductName='UMG800', SoftwareVersion='1.7.2+372baf72.250522114206.b685', BuildNumber='May 22 2025 11:41:18', BuildDate=datetime.datetime(1601, 1, 1, 0, 0, tzinfo=datetime.timezone.utc)), SecondsTillShutdown=0, ShutdownReason=LocalizedText(Locale=None, Text=None))  [i=2256]
+│ ├─ [Method] SetSubscriptionDurable  (i=12749)
+│ │ ├─ OutputArguments  =  [Argument(Name='RevisedLifetimeInHours', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=12751]
+│ │ └─ InputArguments  =  [Argument(Name='SubscriptionId', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='LifetimeInHours', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=12750]
+│ ├─ [Object] VendorServerInfo  (i=2295)
+│ ├─ [Method] ResendData  (i=12873)
+│ │ └─ InputArguments  =  [Argument(Name='SubscriptionId', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=12874]
+│ ├─ [Method] RequestServerStateChange  (i=12886)
+│ │ └─ InputArguments  =  [Argument(Name='State', DataType=NodeId(Identifier=852, NamespaceIndex=0, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='EstimatedReturnTime', DataType=NodeId(Identifier=13, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='SecondsTillShutdown', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='Reason', DataType=NodeId(Identifier=21, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='Restart', DataType=NodeId(Identifier=1, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=12887]
+│ ├─ [Object] Dictionaries  (i=17594)
+│ ├─ [Method] GetMonitoredItems  (i=11492)
+│ │ ├─ OutputArguments  =  [Argument(Name='ServerHandles', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=1, ArrayDimensions=[0], Description=LocalizedText(Locale=None, Text=None)), Argument(Name='ClientHandles', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=1, ArrayDimensions=[0], Description=LocalizedText(Locale=None, Text=None))]  [i=11494]
+│ │ └─ InputArguments  =  [Argument(Name='SubscriptionId', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=11493]
+│ ├─ [Object] PublishSubscribe  (i=14443)
+│ │ ├─ [Object] Diagnostics  (i=17409)
+│ │ │ ├─ [Object] LiveValues  (i=17457)
+│ │ │ ├─ SubError  =  None  [i=17422]
+│ │ │ ├─ TotalError  =  None  [i=17416]
+│ │ │ ├─ [Method] Reset  (i=17421)
+│ │ │ ├─ DiagnosticsLevel  =  None  [i=17410]
+│ │ │ ├─ [Object] Counters  (i=17423)
+│ │ │ └─ TotalInformation  =  None  [i=17411]
+│ │ ├─ [Method] AddConnection  (i=17366)
+│ │ │ ├─ OutputArguments  =  [Argument(Name='ConnectionId', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=17368]
+│ │ │ └─ InputArguments  =  [Argument(Name='Configuration', DataType=NodeId(Identifier=15617, NamespaceIndex=0, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=17367]
+│ │ ├─ [Object] SecurityGroups  (i=15443)
+│ │ │ ├─ [Method] RemoveSecurityGroup  (i=15447)
+│ │ │ └─ [Method] AddSecurityGroup  (i=15444)
+│ │ ├─ [Object] PublishedDataSets  (i=17371)
+│ │ ├─ [Method] GetSecurityGroup  (i=15440)
+│ │ │ ├─ InputArguments  =  [Argument(Name='SecurityGroupId', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=15441]
+│ │ │ └─ OutputArguments  =  [Argument(Name='SecurityGroupNodeId', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=15442]
+│ │ ├─ [Method] GetSecurityKeys  (i=15215)
+│ │ │ ├─ OutputArguments  =  [Argument(Name='SecurityPolicyUri', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='FirstTokenId', DataType=NodeId(Identifier=288, NamespaceIndex=0, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='Keys', DataType=NodeId(Identifier=15, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='TimeToNextKey', DataType=NodeId(Identifier=290, NamespaceIndex=0, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='KeyLifetime', DataType=NodeId(Identifier=290, NamespaceIndex=0, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=15217]
+│ │ │ └─ InputArguments  =  [Argument(Name='SecurityGroupId', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='StartingTokenId', DataType=NodeId(Identifier=288, NamespaceIndex=0, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='RequestedKeyCount', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=15216]
+│ │ ├─ [Object] Status  (i=17405)
+│ │ │ └─ State  =  None  [i=17406]
+│ │ ├─ [Method] RemoveConnection  (i=17369)
+│ │ │ └─ InputArguments  =  [Argument(Name='ConnectionId', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=17370]
+│ │ └─ SupportedTransportProfiles  =  None  [i=17481]
+│ ├─ [Object] ServerRedundancy  (i=2296)
+│ │ ├─ RedundantServerArray  =  None  [i=11313]
+│ │ ├─ RedundancySupport  =  0  [i=3709]
+│ │ ├─ ServerNetworkGroups  =  None  [i=14415]
+│ │ ├─ ServerUriArray  =  None  [i=11314]
+│ │ └─ CurrentServerId  =  None  [i=11312]
+│ ├─ [Object] ServerDiagnostics  (i=2274)
+│ │ ├─ ServerDiagnosticsSummary  =  ServerDiagnosticsSummaryDataType(ServerViewCount=0, CurrentSessionCount=0, CumulatedSessionCount=0, SecurityRejectedSessionCount=0, RejectedSessionCount=0, SessionTimeoutCount=0, SessionAbortCount=0, CurrentSubscriptionCount=0, CumulatedSubscriptionCount=0, PublishingIntervalCount=0, SecurityRejectedRequestsCount=0, RejectedRequestsCount=0)  [i=2275]
+│ │ ├─ SamplingIntervalDiagnosticsArray  =  None  [i=2289]
+│ │ ├─ SubscriptionDiagnosticsArray  =  None  [i=2290]
+│ │ ├─ [Object] SessionsDiagnosticsSummary  (i=3706)
+│ │ │ ├─ SessionSecurityDiagnosticsArray  =  None  [i=3708]
+│ │ │ └─ SessionDiagnosticsArray  =  None  [i=3707]
+│ │ └─ EnabledFlag  =  False  [i=2294]
+│ ├─ [Object] ServerCapabilities  (i=2268)
+│ │ ├─ MaxArrayLength  =  1000  [i=11702]
+│ │ ├─ SoftwareCertificates  =  None  [i=3704]
+│ │ ├─ MinSupportedSampleRate  =  50.0  [i=2272]
+│ │ ├─ ServerProfileArray  =  ['http://opcfoundation.org/UA-Profile/Server/MicroEmbeddedDevice', 'http://opcfoundation.org/UA-Profile/Server/NodeManagement', 'http://opcfoundation.org/UA-Profile/Server/Methods']  [i=2269]
+│ │ ├─ MaxBrowseContinuationPoints  =  5  [i=2735]
+│ │ ├─ MaxByteStringLength  =  8388608  [i=12911]
+│ │ ├─ MaxQueryContinuationPoints  =  0  [i=2736]
+│ │ ├─ LocaleIdArray  =  ['en']  [i=2271]
+│ │ ├─ MaxHistoryContinuationPoints  =  0  [i=2737]
+│ │ ├─ MaxStringLength  =  1048576  [i=11703]
+│ │ ├─ [Object] OperationLimits  (i=11704)
+│ │ │ ├─ MaxNodesPerNodeManagement  =  0  [i=11713]
+│ │ │ ├─ MaxMonitoredItemsPerCall  =  0  [i=11714]
+│ │ │ ├─ MaxNodesPerTranslateBrowsePathsToNodeIds  =  0  [i=11712]
+│ │ │ ├─ MaxNodesPerHistoryUpdateEvents  =  None  [i=12168]
+│ │ │ ├─ MaxNodesPerHistoryUpdateData  =  None  [i=12167]
+│ │ │ ├─ MaxNodesPerWrite  =  0  [i=11707]
+│ │ │ ├─ MaxNodesPerBrowse  =  0  [i=11710]
+│ │ │ ├─ MaxNodesPerRegisterNodes  =  0  [i=11711]
+│ │ │ ├─ MaxNodesPerMethodCall  =  0  [i=11709]
+│ │ │ ├─ MaxNodesPerHistoryReadEvents  =  None  [i=12166]
+│ │ │ ├─ MaxNodesPerHistoryReadData  =  None  [i=12165]
+│ │ │ └─ MaxNodesPerRead  =  0  [i=11705]
+│ │ ├─ [Object] ModellingRules  (i=2996)
+│ │ │ ├─ [Object] Optional  (i=80)
+│ │ │ └─ [Object] Mandatory  (i=78)
+│ │ ├─ [Object] HistoryServerCapabilities  (i=11192)
+│ │ │ ├─ [Object] AggregateFunctions  (i=11201)
+│ │ │ ├─ UpdateEventCapability  =  None  [i=11283]
+│ │ │ ├─ InsertEventCapability  =  None  [i=11281]
+│ │ │ ├─ UpdateDataCapability  =  None  [i=11198]
+│ │ │ ├─ DeleteRawCapability  =  None  [i=11199]
+│ │ │ ├─ InsertAnnotationCapability  =  None  [i=11275]
+│ │ │ ├─ ReplaceDataCapability  =  None  [i=11197]
+│ │ │ ├─ MaxReturnEventValues  =  None  [i=11274]
+│ │ │ ├─ AccessHistoryDataCapability  =  None  [i=11193]
+│ │ │ ├─ ReplaceEventCapability  =  None  [i=11282]
+│ │ │ ├─ DeleteEventCapability  =  None  [i=11502]
+│ │ │ ├─ DeleteAtTimeCapability  =  None  [i=11200]
+│ │ │ ├─ InsertDataCapability  =  None  [i=11196]
+│ │ │ ├─ ServerTimestampSupported  =  None  [i=19091]
+│ │ │ ├─ AccessHistoryEventsCapability  =  None  [i=11242]
+│ │ │ └─ MaxReturnDataValues  =  None  [i=11273]
+│ │ ├─ [Object] RoleSet  (i=15606)
+│ │ │ ├─ [Object] Operator  (i=15680)
+│ │ │ ├─ [Object] Supervisor  (i=15692)
+│ │ │ ├─ [Method] AddRole  (i=16301)
+│ │ │ ├─ [Object] Observer  (i=15668)
+│ │ │ ├─ [Object] SecurityAdmin  (i=15704)
+│ │ │ ├─ [Object] ConfigureAdmin  (i=15716)
+│ │ │ ├─ [Method] RemoveRole  (i=16304)
+│ │ │ ├─ [Object] Anonymous  (i=15644)
+│ │ │ ├─ [Object] Engineer  (i=16036)
+│ │ │ └─ [Object] AuthenticatedUser  (i=15656)
+│ │ └─ [Object] AggregateFunctions  (i=2997)
+│ ├─ [Object] ServerConfiguration  (i=12637)
+│ │ ├─ [Method] CreateSigningRequest  (i=12737)
+│ │ │ ├─ OutputArguments  =  [Argument(Name='CertificateRequest', DataType=NodeId(Identifier=15, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=12739]
+│ │ │ └─ InputArguments  =  [Argument(Name='CertificateGroupId', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='CertificateTypeId', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='SubjectName', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='RegeneratePrivateKey', DataType=NodeId(Identifier=1, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='Nonce', DataType=NodeId(Identifier=15, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=12738]
+│ │ ├─ [Object] AuthorizationServices  (i=17732)
+│ │ ├─ [Object] KeyCredentialConfiguration  (i=18155)
+│ │ ├─ [Method] ApplyChanges  (i=12740)
+│ │ ├─ [Object] CertificateGroups  (i=14053)
+│ │ │ ├─ [Object] DefaultHttpsGroup  (i=14088)
+│ │ │ ├─ [Object] DefaultApplicationGroup  (i=14156)
+│ │ │ └─ [Object] DefaultUserTokenGroup  (i=14122)
+│ │ ├─ [Method] UpdateCertificate  (i=13737)
+│ │ │ ├─ InputArguments  =  [Argument(Name='CertificateGroupId', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='CertificateTypeId', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='Certificate', DataType=NodeId(Identifier=15, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='IssuerCertificates', DataType=NodeId(Identifier=15, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='PrivateKeyFormat', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='PrivateKey', DataType=NodeId(Identifier=15, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=13738]
+│ │ │ └─ OutputArguments  =  [Argument(Name='ApplyChangesRequired', DataType=NodeId(Identifier=1, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=13739]
+│ │ ├─ [Method] GetRejectedList  (i=12777)
+│ │ │ └─ OutputArguments  =  [Argument(Name='Certificates', DataType=NodeId(Identifier=15, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=12778]
+│ │ ├─ ServerCapabilities  =  None  [i=12710]
+│ │ ├─ SupportedPrivateKeyFormats  =  None  [i=12639]
+│ │ ├─ MulticastDnsEnabled  =  None  [i=12641]
+│ │ └─ MaxTrustListSize  =  None  [i=12640]
+│ ├─ [Object] Namespaces  (i=11715)
+│ │ ├─ [Object] https://opc.janitza.de/umg801/public  (ns=2;i=5001)
+│ │ │ ├─ StaticNumericNodeIdRange  =  ['1:100000000']  [ns=2;i=6006]
+│ │ │ ├─ IsNamespaceSubset  =  False  [ns=2;i=6001]
+│ │ │ ├─ NamespaceUri  =  https://opc.janitza.de/umg801/public  [ns=2;i=6003]
+│ │ │ ├─ StaticNodeIdTypes  =  None  [ns=2;i=6005]
+│ │ │ ├─ NamespaceVersion  =  1.7.0  [ns=2;i=6004]
+│ │ │ ├─ StaticStringNodeIdPattern  =  None  [ns=2;i=6007]
+│ │ │ └─ NamespacePublicationDate  =  2024-07-25 11:34:46+00:00  [ns=2;i=6002]
+│ │ └─ [Object] http://opcfoundation.org/UA/  (i=15957)
+│ │   ├─ DefaultAccessRestrictions  =  None  [i=16136]
+│ │   ├─ DefaultUserRolePermissions  =  None  [i=16135]
+│ │   ├─ StaticStringNodeIdPattern  =    [i=15964]
+│ │   ├─ IsNamespaceSubset  =  False  [i=15961]
+│ │   ├─ NamespaceUri  =  http://opcfoundation.org/UA/  [i=15958]
+│ │   ├─ StaticNumericNodeIdRange  =  ['1:65535']  [i=15963]
+│ │   ├─ DefaultRolePermissions  =  None  [i=16134]
+│ │   ├─ StaticNodeIdTypes  =  [0]  [i=15962]
+│ │   ├─ NamespacePublicationDate  =  2020-07-15 00:00:00+00:00  [i=15960]
+│ │   └─ NamespaceVersion  =  1.04.7  [i=15959]
+│ ├─ LocalTime  =  None  [i=17634]
+│ ├─ Auditing  =  False  [i=2994]
+│ ├─ ServerArray  =  ['https://opc.janitza.de/umg800']  [i=2254]
+│ ├─ ServiceLevel  =  255  [i=2267]
+│ ├─ NamespaceArray  =  ['http://opcfoundation.org/UA/', 'https://opc.janitza.de/umg800', 'https://opc.janitza.de/umg801/public']  [i=2255]
+│ └─ EstimatedReturnTime  =  None  [i=12885]
+├─ [Object] Device  (ns=2;i=10000)
+│ ├─ [Object] Modules  (ns=2;i=999000)
+│ │ ├─ [Object] Module1  (ns=2;i=1000000)
+│ │ │ ├─ [Object] Maintenance  (ns=2;i=1001000)
+│ │ │ ├─ [Object] Info  (ns=2;i=1000001)
+│ │ │ └─ [Object] Measurements  (ns=2;i=1004000)
+│ │ ├─ [Object] Module3  (ns=2;i=1200000)
+│ │ │ ├─ [Object] Info  (ns=2;i=1200001)
+│ │ │ ├─ [Object] Maintenance  (ns=2;i=1201000)
+│ │ │ └─ [Object] Measurements  (ns=2;i=1204000)
+│ │ ├─ [Object] Module4  (ns=2;i=1300000)
+│ │ │ ├─ [Object] Info  (ns=2;i=1300001)
+│ │ │ ├─ [Object] Maintenance  (ns=2;i=1301000)
+│ │ │ └─ [Object] Measurements  (ns=2;i=1304000)
+│ │ ├─ [Object] Module6  (ns=2;i=1500000)
+│ │ │ ├─ [Object] Info  (ns=2;i=1500001)
+│ │ │ ├─ [Object] Maintenance  (ns=2;i=1501000)
+│ │ │ └─ [Object] Measurements  (ns=2;i=1504000)
+│ │ ├─ [Object] Module5  (ns=2;i=1400000)
+│ │ │ ├─ [Object] Maintenance  (ns=2;i=1401000)
+│ │ │ ├─ [Object] Info  (ns=2;i=1400001)
+│ │ │ └─ [Object] Measurements  (ns=2;i=1404000)
+│ │ └─ [Object] Module2  (ns=2;i=1100000)
+│ │   ├─ [Object] Info  (ns=2;i=1100001)
+│ │   ├─ [Object] Maintenance  (ns=2;i=1101000)
+│ │   └─ [Object] Measurements  (ns=2;i=1104000)
+│ ├─ [Object] Access  (ns=2;i=12000)
+│ │ ├─ [Object] Ip  (ns=2;i=12500)
+│ │ │ ├─ [Object] InterfaceA  (ns=2;i=12550)
+│ │ │ ├─ Ip6Enabled  =  False  [ns=2;i=12506]
+│ │ │ ├─ Hostname  =  umg800-1800-0082  [ns=2;i=12503]
+│ │ │ ├─ DnsAutomatic  =  True  [ns=2;i=12501]
+│ │ │ ├─ DnsServers  =  ['', '', '']  [ns=2;i=12502]
+│ │ │ ├─ Mode  =  0  [ns=2;i=12509]
+│ │ │ └─ LogDroppedPackets  =  False  [ns=2;i=12507]
+│ │ ├─ [Object] Locale  (ns=2;i=12300)
+│ │ │ ├─ Locale  =  en_US  [ns=2;i=12301]
+│ │ │ ├─ Locales  =  ['en_US', 'de_DE']  [ns=2;i=12302]
+│ │ │ └─ Valid  =  True  [ns=2;i=12303]
+│ │ ├─ [Object] Webserver  (ns=2;i=12250)
+│ │ │ ├─ Enabled  =  True  [ns=2;i=12251]
+│ │ │ ├─ Encryption  =  0  [ns=2;i=12252]
+│ │ │ ├─ PortTls  =  443  [ns=2;i=12254]
+│ │ │ └─ Port  =  80  [ns=2;i=12253]
+│ │ ├─ [Object] Modbus  (ns=2;i=12100)
+│ │ │ ├─ [Object] Mappings  (ns=2;i=12110)
+│ │ │ ├─ IpMode  =  0  [ns=2;i=12104]
+│ │ │ ├─ Mode  =  1  [ns=2;i=12107]
+│ │ │ ├─ Address  =  1  [ns=2;i=12101]
+│ │ │ ├─ IpPort  =  502  [ns=2;i=12105]
+│ │ │ ├─ IpGatewayTimeout  =  450  [ns=2;i=12103]
+│ │ │ └─ Exceptions  =  [1, 2, 3, 4, 11]  [ns=2;i=12102]
+│ │ ├─ [Object] Hmi  (ns=2;i=12050)
+│ │ │ ├─ StandbyMode  =  2  [ns=2;i=12054]
+│ │ │ ├─ Brightness  =  60  [ns=2;i=12051]
+│ │ │ ├─ StandbyBrightness  =  20  [ns=2;i=12053]
+│ │ │ ├─ Pin  =  0  [ns=2;i=12052]
+│ │ │ └─ StandbyTime  =  600  [ns=2;i=12055]
+│ │ ├─ [Object] Serial  (ns=2;i=12200)
+│ │ │ ├─ RxCount  =  0  [ns=2;i=12205]
+│ │ │ ├─ TxCount  =  0  [ns=2;i=12206]
+│ │ │ ├─ ErrCount  =  0  [ns=2;i=12202]
+│ │ │ ├─ [Method] ClearCounters  (ns=2;i=7028)
+│ │ │ ├─ Frame  =  0  [ns=2;i=12203]
+│ │ │ ├─ Protocol  =  1  [ns=2;i=12204]
+│ │ │ └─ Baudrate  =  4  [ns=2;i=12201]
+│ │ └─ [Object] OpcUa  (ns=2;i=12150)
+│ │   ├─ Port  =  4840  [ns=2;i=12151]
+│ │   └─ Encryption  =  0  [ns=2;i=12152]
+│ ├─ [Object] Time  (ns=2;i=15500)
+│ │ ├─ DateTime  =  2026-06-18 19:05:02.806000+00:00  [ns=2;i=15503]
+│ │ ├─ ZoneValid  =  True  [ns=2;i=15512]
+│ │ ├─ DateTimeString  =  2026-06-18 19:05:03  [ns=2;i=15505]
+│ │ ├─ NtpServers  =  ['0.pool.ntp.org', '', '', '', '', '']  [ns=2;i=15507]
+│ │ ├─ Mode  =  2  [ns=2;i=15506]
+│ │ ├─ TimeString  =  19:05:03  [ns=2;i=15509]
+│ │ ├─ Zones  =  ['Africa/Abidjan', 'Africa/Accra', 'Africa/Addis_Ababa', 'Africa/Algiers', 'Africa/Asmara', 'Africa/Bamako', 'Africa/Bangui', 'Africa/Banjul', 'Africa/Bissau', 'Africa/Blantyre', 'Africa/Brazzaville', 'Africa/Bujumbura', 'Africa/Cairo', 'Africa/Casablanca', 'Africa/Ceuta', 'Africa/Conakry', 'Africa/Dakar', 'Africa/Dar_es_Salaam', 'Africa/Djibouti', 'Africa/Douala', 'Africa/El_Aaiun', 'Africa/Freetown', 'Africa/Gaborone', 'Africa/Harare', 'Africa/Johannesburg', 'Africa/Juba', 'Africa/Kampala', 'Africa/Khartoum', 'Africa/Kigali', 'Africa/Kinshasa', 'Africa/Lagos', 'Africa/Libreville', 'Africa/Lome', 'Africa/Luanda', 'Africa/Lubumbashi', 'Africa/Lusaka', 'Africa/Malabo', 'Africa/Maputo', 'Africa/Maseru', 'Africa/Mbabane', 'Africa/Mogadishu', 'Africa/Monrovia', 'Africa/Nairobi', 'Africa/Ndjamena', 'Africa/Niamey', 'Africa/Nouakchott', 'Africa/Ouagadougou', 'Africa/Porto-Novo', 'Africa/Sao_Tome', 'Africa/Tripoli', 'Africa/Tunis', 'Africa/Windhoek', 'America/Adak', 'America/Anchorage', 'America/Anguilla', 'America/Antigua', 'America/Araguaina', 'America/Argentina/Buenos_Aires', 'America/Argentina/Catamarca', 'America/Argentina/Cordoba', 'America/Argentina/Jujuy', 'America/Argentina/La_Rioja', 'America/Argentina/Mendoza', 'America/Argentina/Rio_Gallegos', 'America/Argentina/Salta', 'America/Argentina/San_Juan', 'America/Argentina/San_Luis', 'America/Argentina/Tucuman', 'America/Argentina/Ushuaia', 'America/Aruba', 'America/Asuncion', 'America/Atikokan', 'America/Bahia', 'America/Bahia_Banderas', 'America/Barbados', 'America/Belem', 'America/Belize', 'America/Blanc-Sablon', 'America/Boa_Vista', 'America/Bogota', 'America/Boise', 'America/Cambridge_Bay', 'America/Campo_Grande', 'America/Cancun', 'America/Caracas', 'America/Cayenne', 'America/Cayman', 'America/Chicago', 'America/Chihuahua', 'America/Ciudad_Juarez', 'America/Costa_Rica', 'America/Creston', 'America/Cuiaba', 'America/Curacao', 'America/Danmarkshavn', 'America/Dawson', 'America/Dawson_Creek', 'America/Denver', 'America/Detroit', 'America/Dominica', 'America/Edmonton', 'America/Eirunepe', 'America/El_Salvador', 'America/Fort_Nelson', 'America/Fortaleza', 'America/Glace_Bay', 'America/Goose_Bay', 'America/Grand_Turk', 'America/Grenada', 'America/Guadeloupe', 'America/Guatemala', 'America/Guayaquil', 'America/Guyana', 'America/Halifax', 'America/Havana', 'America/Hermosillo', 'America/Indiana/Indianapolis', 'America/Indiana/Knox', 'America/Indiana/Marengo', 'America/Indiana/Petersburg', 'America/Indiana/Tell_City', 'America/Indiana/Vevay', 'America/Indiana/Vincennes', 'America/Indiana/Winamac', 'America/Inuvik', 'America/Iqaluit', 'America/Jamaica', 'America/Juneau', 'America/Kentucky/Louisville', 'America/Kentucky/Monticello', 'America/Kralendijk', 'America/La_Paz', 'America/Lima', 'America/Los_Angeles', 'America/Lower_Princes', 'America/Maceio', 'America/Managua', 'America/Manaus', 'America/Marigot', 'America/Martinique', 'America/Matamoros', 'America/Mazatlan', 'America/Menominee', 'America/Merida', 'America/Metlakatla', 'America/Mexico_City', 'America/Miquelon', 'America/Moncton', 'America/Monterrey', 'America/Montevideo', 'America/Montserrat', 'America/Nassau', 'America/New_York', 'America/Nome', 'America/Noronha', 'America/North_Dakota/Beulah', 'America/North_Dakota/Center', 'America/North_Dakota/New_Salem', 'America/Nuuk', 'America/Ojinaga', 'America/Panama', 'America/Paramaribo', 'America/Phoenix', 'America/Port-au-Prince', 'America/Port_of_Spain', 'America/Porto_Velho', 'America/Puerto_Rico', 'America/Punta_Arenas', 'America/Rankin_Inlet', 'America/Recife', 'America/Regina', 'America/Resolute', 'America/Rio_Branco', 'America/Santarem', 'America/Santiago', 'America/Santo_Domingo', 'America/Sao_Paulo', 'America/Scoresbysund', 'America/Sitka', 'America/St_Barthelemy', 'America/St_Johns', 'America/St_Kitts', 'America/St_Lucia', 'America/St_Thomas', 'America/St_Vincent', 'America/Swift_Current', 'America/Tegucigalpa', 'America/Thule', 'America/Tijuana', 'America/Toronto', 'America/Tortola', 'America/Vancouver', 'America/Whitehorse', 'America/Winnipeg', 'America/Yakutat', 'Antarctica/Casey', 'Antarctica/Davis', 'Antarctica/DumontDUrville', 'Antarctica/Macquarie', 'Antarctica/Mawson', 'Antarctica/McMurdo', 'Antarctica/Palmer', 'Antarctica/Rothera', 'Antarctica/Syowa', 'Antarctica/Troll', 'Antarctica/Vostok', 'Arctic/Longyearbyen', 'Asia/Aden', 'Asia/Almaty', 'Asia/Amman', 'Asia/Anadyr', 'Asia/Aqtau', 'Asia/Aqtobe', 'Asia/Ashgabat', 'Asia/Atyrau', 'Asia/Baghdad', 'Asia/Bahrain', 'Asia/Baku', 'Asia/Bangkok', 'Asia/Barnaul', 'Asia/Beirut', 'Asia/Bishkek', 'Asia/Brunei', 'Asia/Chita', 'Asia/Choibalsan', 'Asia/Colombo', 'Asia/Damascus', 'Asia/Dhaka', 'Asia/Dili', 'Asia/Dubai', 'Asia/Dushanbe', 'Asia/Famagusta', 'Asia/Gaza', 'Asia/Hebron', 'Asia/Ho_Chi_Minh', 'Asia/Hong_Kong', 'Asia/Hovd', 'Asia/Irkutsk', 'Asia/Jakarta', 'Asia/Jayapura', 'Asia/Jerusalem', 'Asia/Kabul', 'Asia/Kamchatka', 'Asia/Karachi', 'Asia/Kathmandu', 'Asia/Khandyga', 'Asia/Kolkata', 'Asia/Krasnoyarsk', 'Asia/Kuala_Lumpur', 'Asia/Kuching', 'Asia/Kuwait', 'Asia/Macau', 'Asia/Magadan', 'Asia/Makassar', 'Asia/Manila', 'Asia/Muscat', 'Asia/Nicosia', 'Asia/Novokuznetsk', 'Asia/Novosibirsk', 'Asia/Omsk', 'Asia/Oral', 'Asia/Phnom_Penh', 'Asia/Pontianak', 'Asia/Pyongyang', 'Asia/Qatar', 'Asia/Qostanay', 'Asia/Qyzylorda', 'Asia/Riyadh', 'Asia/Sakhalin', 'Asia/Samarkand', 'Asia/Seoul', 'Asia/Shanghai', 'Asia/Singapore', 'Asia/Srednekolymsk', 'Asia/Taipei', 'Asia/Tashkent', 'Asia/Tbilisi', 'Asia/Tehran', 'Asia/Thimphu', 'Asia/Tokyo', 'Asia/Tomsk', 'Asia/Ulaanbaatar', 'Asia/Urumqi', 'Asia/Ust-Nera', 'Asia/Vientiane', 'Asia/Vladivostok', 'Asia/Yakutsk', 'Asia/Yangon', 'Asia/Yekaterinburg', 'Asia/Yerevan', 'Atlantic/Azores', 'Atlantic/Bermuda', 'Atlantic/Canary', 'Atlantic/Cape_Verde', 'Atlantic/Faroe', 'Atlantic/Madeira', 'Atlantic/Reykjavik', 'Atlantic/South_Georgia', 'Atlantic/St_Helena', 'Atlantic/Stanley', 'Australia/Adelaide', 'Australia/Brisbane', 'Australia/Broken_Hill', 'Australia/Darwin', 'Australia/Eucla', 'Australia/Hobart', 'Australia/Lindeman', 'Australia/Lord_Howe', 'Australia/Melbourne', 'Australia/Perth', 'Australia/Sydney', 'Europe/Amsterdam', 'Europe/Andorra', 'Europe/Astrakhan', 'Europe/Athens', 'Europe/Belgrade', 'Europe/Berlin', 'Europe/Bratislava', 'Europe/Brussels', 'Europe/Bucharest', 'Europe/Budapest', 'Europe/Busingen', 'Europe/Chisinau', 'Europe/Copenhagen', 'Europe/Dublin', 'Europe/Gibraltar', 'Europe/Guernsey', 'Europe/Helsinki', 'Europe/Isle_of_Man', 'Europe/Istanbul', 'Europe/Jersey', 'Europe/Kaliningrad', 'Europe/Kirov', 'Europe/Kyiv', 'Europe/Lisbon', 'Europe/Ljubljana', 'Europe/London', 'Europe/Luxembourg', 'Europe/Madrid', 'Europe/Malta', 'Europe/Mariehamn', 'Europe/Minsk', 'Europe/Monaco', 'Europe/Moscow', 'Europe/Oslo', 'Europe/Paris', 'Europe/Podgorica', 'Europe/Prague', 'Europe/Riga', 'Europe/Rome', 'Europe/Samara', 'Europe/San_Marino', 'Europe/Sarajevo', 'Europe/Saratov', 'Europe/Simferopol', 'Europe/Skopje', 'Europe/Sofia', 'Europe/Stockholm', 'Europe/Tallinn', 'Europe/Tirane', 'Europe/Ulyanovsk', 'Europe/Vaduz', 'Europe/Vatican', 'Europe/Vienna', 'Europe/Vilnius', 'Europe/Volgograd', 'Europe/Warsaw', 'Europe/Zagreb', 'Europe/Zurich', 'Indian/Antananarivo', 'Indian/Chagos', 'Indian/Christmas', 'Indian/Cocos', 'Indian/Comoro', 'Indian/Kerguelen', 'Indian/Mahe', 'Indian/Maldives', 'Indian/Mauritius', 'Indian/Mayotte', 'Indian/Reunion', 'Pacific/Apia', 'Pacific/Auckland', 'Pacific/Bougainville', 'Pacific/Chatham', 'Pacific/Chuuk', 'Pacific/Easter', 'Pacific/Efate', 'Pacific/Fakaofo', 'Pacific/Fiji', 'Pacific/Funafuti', 'Pacific/Galapagos', 'Pacific/Gambier', 'Pacific/Guadalcanal', 'Pacific/Guam', 'Pacific/Honolulu', 'Pacific/Kanton', 'Pacific/Kiritimati', 'Pacific/Kosrae', 'Pacific/Kwajalein', 'Pacific/Majuro', 'Pacific/Marquesas', 'Pacific/Midway', 'Pacific/Nauru', 'Pacific/Niue', 'Pacific/Norfolk', 'Pacific/Noumea', 'Pacific/Pago_Pago', 'Pacific/Palau', 'Pacific/Pitcairn', 'Pacific/Pohnpei', 'Pacific/Port_Moresby', 'Pacific/Rarotonga', 'Pacific/Saipan', 'Pacific/Tahiti', 'Pacific/Tarawa', 'Pacific/Tongatapu', 'Pacific/Wake', 'Pacific/Wallis', 'Universal']  [ns=2;i=15511]
+│ │ ├─ Zone  =  Universal  [ns=2;i=15510]
+│ │ ├─ DateTimeFormat  =  %Y-%m-%d %H:%M:%S  [ns=2;i=15504]
+│ │ ├─ DateFormat  =  %Y-%m-%d  [ns=2;i=15501]
+│ │ ├─ DateString  =  2026-06-18  [ns=2;i=15502]
+│ │ └─ TimeFormat  =  %H:%M:%S  [ns=2;i=15508]
+│ ├─ [Object] Recordings  (ns=2;i=14000)
+│ │ ├─ [Method] Create  (ns=2;i=53)
+│ │ │ ├─ OutputArguments  =  [Argument(Name='Id', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The ID of the newly created recording.'))]  [ns=2;i=177]
+│ │ │ └─ InputArguments  =  [Argument(Name='Name', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The recording configuration name.')), Argument(Name='Desc', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The recording configuration description.'))]  [ns=2;i=24]
+│ │ ├─ [Method] Delete  (ns=2;i=60)
+│ │ │ └─ InputArguments  =  [Argument(Name='Id', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The ID of the recording to delete.'))]  [ns=2;i=2503]
+│ │ ├─ [Method] QueryTypes  (ns=2;i=1774)
+│ │ │ ├─ OutputArguments  =  [Argument(Name='TypeInfos', DataType=NodeId(Identifier=1031, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The type informations in same order as the input node IDs. Type "Undefined" indicates that the input node ID is invalid to use.'))]  [ns=2;i=1718]
+│ │ │ └─ InputArguments  =  [Argument(Name='NodeIds', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The array of node IDs to which the type information should be retrieved.'))]  [ns=2;i=1715]
+│ │ ├─ [Method] DeleteAll  (ns=2;i=57)
+│ │ ├─ [Object] PQ  (ns=2;i=14050)
+│ │ │ ├─ [Object] PQDIF  (ns=2;i=14051)
+│ │ │ ├─ [Object] ComTraDE  (ns=2;i=14052)
+│ │ │ ├─ [Method] DeleteAll  (ns=2;i=7093)
+│ │ │ ├─ [Method] Delete  (ns=2;i=7092)
+│ │ │ └─ latestId  =  303  [ns=2;i=14053]
+│ │ ├─ MaxRecordings  =  25  [ns=2;i=14007]
+│ │ ├─ ActiveValues  =  0  [ns=2;i=14002]
+│ │ └─ MaxActiveValues  =  2000  [ns=2;i=14006]
+│ ├─ [Method] Lookup  (ns=2;i=7011)
+│ │ ├─ OutputArguments  =  [Argument(Name='Nodes', DataType=NodeId(Identifier=3017, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='A list of all nodes with the specfic tag.'))]  [ns=2;i=6516]
+│ │ └─ InputArguments  =  [Argument(Name='Tag', DataType=NodeId(Identifier=3016, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The tag to filter for.'))]  [ns=2;i=6040]
+│ ├─ [Object] Info  (ns=2;i=11000)
+│ │ ├─ Kind  =  2  [ns=2;i=11032]
+│ │ ├─ Description  =  Basic Device of UMG801  [ns=2;i=11001]
+│ │ ├─ HardwareVersion  =  1  [ns=2;i=11002]
+│ │ ├─ SoftwareVersion  =  ExtensionObject(TypeId=NodeId(Identifier=5068, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x01\x00\x07\x00\x02\x00\x00\x00\x00\x00\x1a\x00\x00\x00372baf72.250522114206.b685')  [ns=2;i=11006]
+│ │ ├─ SerialNumber  =  18000891  [ns=2;i=11005]
+│ │ ├─ SoftwareVersionString  =  1.7.2+372baf72.250522114206.b685  [ns=2;i=11007]
+│ │ ├─ Name  =  HYPER_RAVEN_RPP_3P4W_54P_415V_REV_B  [ns=2;i=11003]
+│ │ └─ ProductionNumber  =  2001744570  [ns=2;i=11004]
+│ ├─ [Object] VirtualMeasurements  (ns=2;i=60000)
+│ │ ├─ [Method] CreateGroup  (ns=2;i=7226)
+│ │ │ └─ OutputArguments  =  [Argument(Name='NodeId', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='NodeId of the new created virtual measurement group'))]  [ns=2;i=7230]
+│ │ ├─ [Method] DeleteAll  (ns=2;i=7228)
+│ │ ├─ [Method] DeleteGroup  (ns=2;i=7227)
+│ │ │ └─ InputArguments  =  [Argument(Name='Id', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text=''))]  [ns=2;i=7231]
+│ │ └─ MaxGroups  =  32  [ns=2;i=100006403]
+│ ├─ [Object] Tariffs  (ns=2;i=15000)
+│ │ ├─ [Object] Base  (ns=2;i=15001)
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=1784)
+│ │ │ ├─ Kinds  =  None  [ns=2;i=15004]
+│ │ │ └─ Id  =  0  [ns=2;i=15003]
+│ │ └─ MaxTariffs  =  0  [ns=2;i=15002]
+│ ├─ [Object] Measurements  (ns=2;i=100000)
+│ │ ├─ [Method] DeleteEnergies  (ns=2;i=113)
+│ │ ├─ [Method] DeleteStatistics  (ns=2;i=114)
+│ │ ├─ MaxAvgSync  =  0  [ns=2;i=100052]
+│ │ ├─ [Object] OverRange  (ns=2;i=100200)
+│ │ │ ├─ MinimalIndicationDurationU  =  15  [i=100006004]
+│ │ │ ├─ MinimalIndicationDurationI  =  15  [i=100006003]
+│ │ │ ├─ OverRange  =  False  [ns=2;i=100210]
+│ │ │ └─ OverRangeChannels  =  None  [ns=2;i=100202]
+│ │ ├─ [Object] UG  (ns=2;i=131000)
+│ │ │ ├─ SymUnbalance  =  0.5141861438751221  [ns=2;i=131500]
+│ │ │ ├─ ULNAvg  =  239.68121337890625  [ns=2;i=131800]
+│ │ │ ├─ [Object] U3  (ns=2;i=139000)
+│ │ │ ├─ Freq  =  60.02818298339844  [ns=2;i=131100]
+│ │ │ ├─ [Method] SetMode  (ns=2;i=7013)
+│ │ │ ├─ [Object] OverRange  (ns=2;i=131200)
+│ │ │ ├─ SymZero  =  0.11481892317533493  [ns=2;i=131600]
+│ │ │ ├─ RotationField  =  1  [ns=2;i=131005]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=80)
+│ │ │ ├─ [Object] U1  (ns=2;i=135000)
+│ │ │ ├─ [Object] U2  (ns=2;i=137000)
+│ │ │ ├─ SymPositive  =  239.63003540039062  [ns=2;i=131400]
+│ │ │ ├─ SymNegative  =  1.2039011716842651  [ns=2;i=131300]
+│ │ │ ├─ UNPERms  =  0.0  [ns=2;i=131700]
+│ │ │ ├─ ULLAvg  =  415.1588439941406  [ns=2;i=131900]
+│ │ │ ├─ FlickerSystem  =  0  [ns=2;i=131021]
+│ │ │ ├─ Network  =  0  [ns=2;i=131017]
+│ │ │ ├─ ThreeWire  =  False  [ns=2;i=131019]
+│ │ │ ├─ TransformerRatio  =  ExtensionObject(TypeId=NodeId(Identifier=516, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x00\x00\xc8C\x00\x00\xc8C')  [ns=2;i=131010]
+│ │ │ ├─ Name  =    [ns=2;i=131002]
+│ │ │ ├─ Nominal  =  277.1300048828125  [ns=2;i=131003]
+│ │ │ ├─ Aron  =  0  [ns=2;i=131016]
+│ │ │ └─ Transformer  =  False  [ns=2;i=131018]
+│ │ ├─ [Object] Transients  (ns=2;i=100500)
+│ │ │ ├─ VoltageChange  =  ExtensionObject(TypeId=NodeId(Identifier=5047, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x00\x00\x00\x00\x00\x00 A')  [ns=2;i=100502]
+│ │ │ ├─ VoltageSlidingWindow  =  ExtensionObject(TypeId=NodeId(Identifier=5047, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x00\x00\x00\x00\x00\x00\xa0@')  [ns=2;i=100503]
+│ │ │ ├─ Counter  =  0  [ns=2;i=100506]
+│ │ │ ├─ VoltageComparative  =  ExtensionObject(TypeId=NodeId(Identifier=5047, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x00\x00\x00\x00\x00\x00\xdcB')  [ns=2;i=100501]
+│ │ │ ├─ WaveformResolution  =  0  [ns=2;i=100505]
+│ │ │ └─ CurrentComparative  =  ExtensionObject(TypeId=NodeId(Identifier=5047, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x00\x00\x00\x00\x00\x00\xdcB')  [ns=2;i=100504]
+│ │ ├─ [Object] Rcm  (ns=2;i=100300)
+│ │ │ ├─ ViolationChannels  =  None  [ns=2;i=100306]
+│ │ │ ├─ BrokenChannels  =  None  [ns=2;i=100303]
+│ │ │ ├─ ViolationNotAckedChannels  =  None  [ns=2;i=100307]
+│ │ │ ├─ ViolationNotAcked  =  False  [ns=2;i=100325]
+│ │ │ ├─ Broken  =  False  [ns=2;i=100310]
+│ │ │ ├─ Warning  =  False  [ns=2;i=100315]
+│ │ │ ├─ WarningChannels  =  None  [ns=2;i=100305]
+│ │ │ ├─ [Method] Acknowledge  (ns=2;i=1832)
+│ │ │ ├─ Indications  =  None  [ns=2;i=100302]
+│ │ │ └─ Violation  =  False  [ns=2;i=100320]
+│ │ ├─ [Object] LimitEvents  (ns=2;i=100100)
+│ │ │ ├─ SupplyVoltageSwell  =  ExtensionObject(TypeId=NodeId(Identifier=5038, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x01\x00\x00\xdcB\x00\x00\x00@')  [ns=2;i=100101]
+│ │ │ ├─ CurrentSwell  =  ExtensionObject(TypeId=NodeId(Identifier=5038, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x00\x00\x00\xdcB\x00\x00\x00@')  [ns=2;i=100105]
+│ │ │ ├─ RapidVoltageChange  =  ExtensionObject(TypeId=NodeId(Identifier=5038, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x01\x00\x00\xa0@\x00\x00 @')  [ns=2;i=100104]
+│ │ │ ├─ SupplyVoltageDip  =  ExtensionObject(TypeId=NodeId(Identifier=5038, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x01\x00\x00\xbeB\x00\x00\x00@')  [ns=2;i=100102]
+│ │ │ ├─ RapidFrequencyChange  =  ExtensionObject(TypeId=NodeId(Identifier=5038, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x00\xcd\xcc\xcc=\x8f\xc2\xf5<')  [ns=2;i=100108]
+│ │ │ ├─ VoltageInterruption  =  ExtensionObject(TypeId=NodeId(Identifier=5038, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x01\x00\x00 A\x00\x00\x00@')  [ns=2;i=100103]
+│ │ │ ├─ FrequencySwell  =  ExtensionObject(TypeId=NodeId(Identifier=5038, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x00\x00\x00\xc9B\xb8\x1e\x05>')  [ns=2;i=100106]
+│ │ │ ├─ FrequencyAveragingTime  =  200  [ns=2;i=100109]
+│ │ │ ├─ FrequencyDip  =  ExtensionObject(TypeId=NodeId(Identifier=5038, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), Body=b'\x00\x00\x00\xc7B\xb8\x1e\x05>')  [ns=2;i=100107]
+│ │ │ ├─ Counter  =  271  [ns=2;i=100112]
+│ │ │ ├─ ActiveEventFlags  =  0  [ns=2;i=100113]
+│ │ │ ├─ FrequencyDeltaT  =  200  [ns=2;i=100110]
+│ │ │ └─ DetectionFrequencyLimit  =  10  [ns=2;i=100111]
+│ │ ├─ AvgAlgorithmU  =  0  [ns=2;i=100047]
+│ │ ├─ MaxAvgSyncSrc  =  0  [ns=2;i=100053]
+│ │ ├─ AvgTimeR  =  600  [ns=2;i=100034]
+│ │ ├─ NullThresholdI  =  5.0  [ns=2;i=100050]
+│ │ ├─ MaxAvgTime  =  900  [ns=2;i=100051]
+│ │ ├─ StartTime  =  None  [i=100006017]
+│ │ ├─ StopTime  =  None  [i=100006029]
+│ │ ├─ AvgTimeU  =  600  [ns=2;i=100035]
+│ │ ├─ VirtualMeterState  =  1  [ns=2;i=100055]
+│ │ ├─ FrequencyMode  =  2  [ns=2;i=100038]
+│ │ ├─ AvgAlgorithmI  =  0  [ns=2;i=100044]
+│ │ ├─ AvgAlgorithmP  =  0  [ns=2;i=100045]
+│ │ ├─ NullThresholdU  =  5.0  [ns=2;i=100049]
+│ │ ├─ AvgTimeI  =  600  [ns=2;i=100032]
+│ │ ├─ AvgTimeP  =  600  [ns=2;i=100033]
+│ │ ├─ AutoInvertCurrent  =  False  [ns=2;i=100048]
+│ │ └─ AvgAlgorithmR  =  0  [ns=2;i=100046]
+│ ├─ [Object] VirtualMeter  (ns=2;i=500000)
+│ │ ├─ [Method] ReferenceLookup  (ns=2;i=7703)
+│ │ │ ├─ InputArguments  =  [Argument(Name='Tag', DataType=NodeId(Identifier=3016, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The tag to filter for.'))]  [ns=2;i=7704]
+│ │ │ └─ OutputArguments  =  [Argument(Name='Nodes', DataType=NodeId(Identifier=3040, NamespaceIndex=2, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='A list of all nodes with the specific tag.'))]  [ns=2;i=7705]
+│ │ ├─ [Object] VirtualMeterTotal  (ns=2;i=596010)
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=596370]
+│ │ │ ├─ [Object] Energies  (ns=2;i=597510)
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=596430]
+│ │ │ ├─ IRmsL3  =  0.0  [ns=2;i=599210]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=596170]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=596230]
+│ │ │ ├─ IRmsL2  =  0.0  [ns=2;i=599110]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=596350]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=596210]
+│ │ │ ├─ S  =  0.0  [ns=2;i=596390]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=596190]
+│ │ │ ├─ PF  =  nan  [ns=2;i=596310]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=596470]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=596150]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7908)
+│ │ │ ├─ IRmsL1  =  0.0  [ns=2;i=599010]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=596250]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=596290]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=596410]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7910)
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=596450]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=596330]
+│ │ │ ├─ P  =  0.0  [ns=2;i=596270]
+│ │ │ └─ D  =  0.0  [ns=2;i=596130]
+│ │ ├─ Mode  =  2  [ns=2;i=500001]
+│ │ ├─ ModuleInversion  =  0  [ns=2;i=500005]
+│ │ ├─ [Object] Group30  (ns=2;i=587010)
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=587230]
+│ │ │ ├─ Q  =  nan  [ns=2;i=587350]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=587170]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=587033]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=587150]
+│ │ │ ├─ P  =  nan  [ns=2;i=587270]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ IRms  =  nan  [ns=2;i=587190]
+│ │ │ ├─ [Object] I3  (ns=2;i=589210)
+│ │ │ ├─ [Object] I1  (ns=2;i=589010)
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=587410]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=587450]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=587330]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=587370]
+│ │ │ ├─ P1  =  nan  [ns=2;i=587290]
+│ │ │ ├─ [Object] I4  (ns=2;i=589310)
+│ │ │ ├─ [Object] I2  (ns=2;i=589110)
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ Valid  =  False  [ns=2;i=587040]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=587210]
+│ │ │ ├─ [Object] Energies  (ns=2;i=588510)
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=587470]
+│ │ │ ├─ D  =  nan  [ns=2;i=587130]
+│ │ │ ├─ S  =  nan  [ns=2;i=587390]
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=587430]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=587250]
+│ │ │ ├─ PF  =  nan  [ns=2;i=587310]
+│ │ │ ├─ Aron  =  0  [ns=2;i=587011]
+│ │ │ └─ Name  =  Virtual measurement group 30  [ns=2;i=587023]
+│ │ ├─ [Object] Group25  (ns=2;i=572010)
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=572470]
+│ │ │ ├─ [Object] I1  (ns=2;i=574010)
+│ │ │ ├─ RotationField  =  0  [ns=2;i=572033]
+│ │ │ ├─ D  =  nan  [ns=2;i=572130]
+│ │ │ ├─ PF  =  nan  [ns=2;i=572310]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ Q  =  nan  [ns=2;i=572350]
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=572430]
+│ │ │ ├─ Valid  =  False  [ns=2;i=572040]
+│ │ │ ├─ P1  =  nan  [ns=2;i=572290]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=572210]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=572250]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=572230]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=572150]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=572170]
+│ │ │ ├─ P  =  nan  [ns=2;i=572270]
+│ │ │ ├─ [Object] I4  (ns=2;i=574310)
+│ │ │ ├─ [Object] Energies  (ns=2;i=573510)
+│ │ │ ├─ IRms  =  nan  [ns=2;i=572190]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=572450]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=572370]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Object] I3  (ns=2;i=574210)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=572410]
+│ │ │ ├─ [Object] I2  (ns=2;i=574110)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=572330]
+│ │ │ ├─ S  =  nan  [ns=2;i=572390]
+│ │ │ ├─ Name  =  Virtual measurement group 25  [ns=2;i=572023]
+│ │ │ └─ Aron  =  0  [ns=2;i=572011]
+│ │ ├─ [Object] Group20  (ns=2;i=557010)
+│ │ │ ├─ Q1  =  nan  [ns=2;i=557370]
+│ │ │ ├─ IRms  =  nan  [ns=2;i=557190]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=557033]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=557450]
+│ │ │ ├─ P  =  nan  [ns=2;i=557270]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=557150]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=557230]
+│ │ │ ├─ Q  =  nan  [ns=2;i=557350]
+│ │ │ ├─ PF  =  nan  [ns=2;i=557310]
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=557430]
+│ │ │ ├─ [Object] I3  (ns=2;i=559210)
+│ │ │ ├─ S  =  nan  [ns=2;i=557390]
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=557470]
+│ │ │ ├─ [Object] I4  (ns=2;i=559310)
+│ │ │ ├─ [Object] I2  (ns=2;i=559110)
+│ │ │ ├─ [Object] I1  (ns=2;i=559010)
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=557170]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=557250]
+│ │ │ ├─ D  =  nan  [ns=2;i=557130]
+│ │ │ ├─ Valid  =  False  [ns=2;i=557040]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=557210]
+│ │ │ ├─ [Object] Energies  (ns=2;i=558510)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=557330]
+│ │ │ ├─ P1  =  nan  [ns=2;i=557290]
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=557410]
+│ │ │ ├─ Aron  =  0  [ns=2;i=557011]
+│ │ │ └─ Name  =  Virtual measurement group 20  [ns=2;i=557023]
+│ │ ├─ [Object] Group6  (ns=2;i=515010)
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=515150]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=515410]
+│ │ │ ├─ PF  =  nan  [ns=2;i=515310]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=515250]
+│ │ │ ├─ [Object] Energies  (ns=2;i=516510)
+│ │ │ ├─ Valid  =  True  [ns=2;i=515040]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=515230]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=515330]
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=515430]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=515350]
+│ │ │ ├─ D  =  0.0  [ns=2;i=515130]
+│ │ │ ├─ [Object] I3  (ns=2;i=517210)
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=515450]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=515290]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=515370]
+│ │ │ ├─ P  =  0.0  [ns=2;i=515270]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=515210]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Object] I2  (ns=2;i=517110)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=515190]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=515033]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=515470]
+│ │ │ ├─ [Object] I4  (ns=2;i=517310)
+│ │ │ ├─ S  =  0.0  [ns=2;i=515390]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=515170]
+│ │ │ ├─ [Object] I1  (ns=2;i=517010)
+│ │ │ ├─ Aron  =  0  [ns=2;i=515011]
+│ │ │ └─ Name  =  VIRTUAL_METER_6  [ns=2;i=515023]
+│ │ ├─ [Object] Group32  (ns=2;i=593010)
+│ │ │ ├─ [Object] I4  (ns=2;i=595310)
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=593430]
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=593470]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=593170]
+│ │ │ ├─ [Object] I2  (ns=2;i=595110)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=593250]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=593330]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=593450]
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=593410]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=593210]
+│ │ │ ├─ P1  =  nan  [ns=2;i=593290]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=593033]
+│ │ │ ├─ [Object] Energies  (ns=2;i=594510)
+│ │ │ ├─ Q1  =  nan  [ns=2;i=593370]
+│ │ │ ├─ IRms  =  nan  [ns=2;i=593190]
+│ │ │ ├─ D  =  nan  [ns=2;i=593130]
+│ │ │ ├─ P  =  nan  [ns=2;i=593270]
+│ │ │ ├─ Valid  =  False  [ns=2;i=593040]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=593230]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ Q  =  nan  [ns=2;i=593350]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ PF  =  nan  [ns=2;i=593310]
+│ │ │ ├─ S  =  nan  [ns=2;i=593390]
+│ │ │ ├─ [Object] I3  (ns=2;i=595210)
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=593150]
+│ │ │ ├─ [Object] I1  (ns=2;i=595010)
+│ │ │ ├─ Aron  =  0  [ns=2;i=593011]
+│ │ │ └─ Name  =  Virtual measurement group 32  [ns=2;i=593023]
+│ │ ├─ [Object] Group10  (ns=2;i=527010)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=527330]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ D  =  0.0  [ns=2;i=527130]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=527210]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=527410]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=527290]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=527033]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=527190]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=527150]
+│ │ │ ├─ P  =  0.0  [ns=2;i=527270]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=527370]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=527230]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=527350]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=527450]
+│ │ │ ├─ [Object] I3  (ns=2;i=529210)
+│ │ │ ├─ PF  =  nan  [ns=2;i=527310]
+│ │ │ ├─ Valid  =  True  [ns=2;i=527040]
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=527430]
+│ │ │ ├─ S  =  0.0  [ns=2;i=527390]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=527470]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Object] Energies  (ns=2;i=528510)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ [Object] I2  (ns=2;i=529110)
+│ │ │ ├─ [Object] I1  (ns=2;i=529010)
+│ │ │ ├─ [Object] I4  (ns=2;i=529310)
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=527170]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=527250]
+│ │ │ ├─ Aron  =  0  [ns=2;i=527011]
+│ │ │ └─ Name  =  VIRTUAL_METER_10  [ns=2;i=527023]
+│ │ ├─ [Object] Group26  (ns=2;i=575010)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=575250]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=575210]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=575330]
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=575410]
+│ │ │ ├─ Valid  =  False  [ns=2;i=575040]
+│ │ │ ├─ [Object] I2  (ns=2;i=577110)
+│ │ │ ├─ P1  =  nan  [ns=2;i=575290]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=575370]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=575450]
+│ │ │ ├─ [Object] I1  (ns=2;i=577010)
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=575150]
+│ │ │ ├─ P  =  nan  [ns=2;i=575270]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=575170]
+│ │ │ ├─ Q  =  nan  [ns=2;i=575350]
+│ │ │ ├─ [Object] I3  (ns=2;i=577210)
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=575430]
+│ │ │ ├─ D  =  nan  [ns=2;i=575130]
+│ │ │ ├─ PF  =  nan  [ns=2;i=575310]
+│ │ │ ├─ S  =  nan  [ns=2;i=575390]
+│ │ │ ├─ [Object] Energies  (ns=2;i=576510)
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=575470]
+│ │ │ ├─ [Object] I4  (ns=2;i=577310)
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=575230]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=575033]
+│ │ │ ├─ IRms  =  nan  [ns=2;i=575190]
+│ │ │ ├─ Aron  =  0  [ns=2;i=575011]
+│ │ │ └─ Name  =  Virtual measurement group 26  [ns=2;i=575023]
+│ │ ├─ [Object] Group22  (ns=2;i=563010)
+│ │ │ ├─ [Object] I1  (ns=2;i=565010)
+│ │ │ ├─ Valid  =  False  [ns=2;i=563040]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ [Object] I4  (ns=2;i=565310)
+│ │ │ ├─ P1  =  nan  [ns=2;i=563290]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=563450]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=563033]
+│ │ │ ├─ [Object] Energies  (ns=2;i=564510)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=563330]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=563210]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=563370]
+│ │ │ ├─ PF  =  nan  [ns=2;i=563310]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=563250]
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=563410]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=563230]
+│ │ │ ├─ P  =  nan  [ns=2;i=563270]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=563170]
+│ │ │ ├─ [Object] I2  (ns=2;i=565110)
+│ │ │ ├─ D  =  nan  [ns=2;i=563130]
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=563470]
+│ │ │ ├─ S  =  nan  [ns=2;i=563390]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=563430]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ Q  =  nan  [ns=2;i=563350]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=563150]
+│ │ │ ├─ IRms  =  nan  [ns=2;i=563190]
+│ │ │ ├─ [Object] I3  (ns=2;i=565210)
+│ │ │ ├─ Name  =  Virtual measurement group 22  [ns=2;i=563023]
+│ │ │ └─ Aron  =  0  [ns=2;i=563011]
+│ │ ├─ [Object] Group23  (ns=2;i=566010)
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=566410]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=566250]
+│ │ │ ├─ IRms  =  nan  [ns=2;i=566190]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=566450]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=566330]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=566150]
+│ │ │ ├─ P1  =  nan  [ns=2;i=566290]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=566370]
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=566430]
+│ │ │ ├─ P  =  nan  [ns=2;i=566270]
+│ │ │ ├─ S  =  nan  [ns=2;i=566390]
+│ │ │ ├─ [Object] I2  (ns=2;i=568110)
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=566470]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=566230]
+│ │ │ ├─ [Object] I3  (ns=2;i=568210)
+│ │ │ ├─ [Object] I4  (ns=2;i=568310)
+│ │ │ ├─ Q  =  nan  [ns=2;i=566350]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=566033]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ [Object] I1  (ns=2;i=568010)
+│ │ │ ├─ Valid  =  False  [ns=2;i=566040]
+│ │ │ ├─ PF  =  nan  [ns=2;i=566310]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=566170]
+│ │ │ ├─ [Object] Energies  (ns=2;i=567510)
+│ │ │ ├─ D  =  nan  [ns=2;i=566130]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=566210]
+│ │ │ ├─ Name  =  Virtual measurement group 23  [ns=2;i=566023]
+│ │ │ └─ Aron  =  0  [ns=2;i=566011]
+│ │ ├─ [Object] Group13  (ns=2;i=536010)
+│ │ │ ├─ PF  =  nan  [ns=2;i=536310]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=536470]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ D  =  0.0  [ns=2;i=536130]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=536150]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=536230]
+│ │ │ ├─ Valid  =  True  [ns=2;i=536040]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=536190]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=536330]
+│ │ │ ├─ P  =  0.0  [ns=2;i=536270]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=536410]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=536370]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=536170]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=536450]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=536250]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=536210]
+│ │ │ ├─ [Object] I4  (ns=2;i=538310)
+│ │ │ ├─ RotationField  =  0  [ns=2;i=536033]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=536350]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=536290]
+│ │ │ ├─ [Object] I2  (ns=2;i=538110)
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=536430]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ S  =  0.0  [ns=2;i=536390]
+│ │ │ ├─ [Object] I3  (ns=2;i=538210)
+│ │ │ ├─ [Object] I1  (ns=2;i=538010)
+│ │ │ ├─ [Object] Energies  (ns=2;i=537510)
+│ │ │ ├─ Aron  =  0  [ns=2;i=536011]
+│ │ │ └─ Name  =  VIRTUAL_METER_13  [ns=2;i=536023]
+│ │ ├─ [Object] Group31  (ns=2;i=590010)
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=590410]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ [Object] I2  (ns=2;i=592110)
+│ │ │ ├─ Valid  =  False  [ns=2;i=590040]
+│ │ │ ├─ [Object] I4  (ns=2;i=592310)
+│ │ │ ├─ D  =  nan  [ns=2;i=590130]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=590210]
+│ │ │ ├─ P1  =  nan  [ns=2;i=590290]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=590170]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=590250]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=590330]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=590150]
+│ │ │ ├─ Q  =  nan  [ns=2;i=590350]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=590230]
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=590430]
+│ │ │ ├─ PF  =  nan  [ns=2;i=590310]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ IRms  =  nan  [ns=2;i=590190]
+│ │ │ ├─ S  =  nan  [ns=2;i=590390]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=590033]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ P  =  nan  [ns=2;i=590270]
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=590470]
+│ │ │ ├─ [Object] Energies  (ns=2;i=591510)
+│ │ │ ├─ Q1  =  nan  [ns=2;i=590370]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=590450]
+│ │ │ ├─ [Object] I3  (ns=2;i=592210)
+│ │ │ ├─ [Object] I1  (ns=2;i=592010)
+│ │ │ ├─ Name  =  Virtual measurement group 31  [ns=2;i=590023]
+│ │ │ └─ Aron  =  0  [ns=2;i=590011]
+│ │ ├─ [Object] Group29  (ns=2;i=584010)
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=584470]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ PF  =  nan  [ns=2;i=584310]
+│ │ │ ├─ [Object] I1  (ns=2;i=586010)
+│ │ │ ├─ S  =  nan  [ns=2;i=584390]
+│ │ │ ├─ Q  =  nan  [ns=2;i=584350]
+│ │ │ ├─ [Object] I2  (ns=2;i=586110)
+│ │ │ ├─ [Object] Energies  (ns=2;i=585510)
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=584430]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=584330]
+│ │ │ ├─ Valid  =  False  [ns=2;i=584040]
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=584410]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=584230]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=584370]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=584170]
+│ │ │ ├─ P  =  nan  [ns=2;i=584270]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=584250]
+│ │ │ ├─ [Object] I4  (ns=2;i=586310)
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=584210]
+│ │ │ ├─ P1  =  nan  [ns=2;i=584290]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=584033]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ IRms  =  nan  [ns=2;i=584190]
+│ │ │ ├─ D  =  nan  [ns=2;i=584130]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=584150]
+│ │ │ ├─ [Object] I3  (ns=2;i=586210)
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=584450]
+│ │ │ ├─ Name  =  Virtual measurement group 29  [ns=2;i=584023]
+│ │ │ └─ Aron  =  0  [ns=2;i=584011]
+│ │ ├─ [Object] Group1  (ns=2;i=500010)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=500330]
+│ │ │ ├─ P  =  0.0  [ns=2;i=500270]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=500410]
+│ │ │ ├─ [Object] Energies  (ns=2;i=501510)
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ D  =  0.0  [ns=2;i=500130]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=500290]
+│ │ │ ├─ [Object] I1  (ns=2;i=502010)
+│ │ │ ├─ Q  =  0.0  [ns=2;i=500350]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=500033]
+│ │ │ ├─ [Object] I2  (ns=2;i=502110)
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=500430]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=500190]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=500170]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=500230]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=500370]
+│ │ │ ├─ Valid  =  True  [ns=2;i=500040]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=500450]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=500470]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=500250]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ [Object] I3  (ns=2;i=502210)
+│ │ │ ├─ PF  =  nan  [ns=2;i=500310]
+│ │ │ ├─ S  =  0.0  [ns=2;i=500390]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=500150]
+│ │ │ ├─ [Object] I4  (ns=2;i=502310)
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=500210]
+│ │ │ ├─ Aron  =  0  [ns=2;i=500011]
+│ │ │ └─ Name  =  VIRTUAL_METER_1  [ns=2;i=500023]
+│ │ ├─ [Object] Group21  (ns=2;i=560010)
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=560230]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=560330]
+│ │ │ ├─ IRms  =  nan  [ns=2;i=560190]
+│ │ │ ├─ PF  =  nan  [ns=2;i=560310]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=560033]
+│ │ │ ├─ P  =  nan  [ns=2;i=560270]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ [Object] Energies  (ns=2;i=561510)
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=560410]
+│ │ │ ├─ Q  =  nan  [ns=2;i=560350]
+│ │ │ ├─ S  =  nan  [ns=2;i=560390]
+│ │ │ ├─ [Object] I3  (ns=2;i=562210)
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=560470]
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=560430]
+│ │ │ ├─ Valid  =  False  [ns=2;i=560040]
+│ │ │ ├─ [Object] I2  (ns=2;i=562110)
+│ │ │ ├─ D  =  nan  [ns=2;i=560130]
+│ │ │ ├─ [Object] I4  (ns=2;i=562310)
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=560210]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ P1  =  nan  [ns=2;i=560290]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=560370]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=560170]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=560150]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=560250]
+│ │ │ ├─ [Object] I1  (ns=2;i=562010)
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=560450]
+│ │ │ ├─ Name  =  Virtual measurement group 21  [ns=2;i=560023]
+│ │ │ └─ Aron  =  0  [ns=2;i=560011]
+│ │ ├─ [Object] Group2  (ns=2;i=503010)
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=503470]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ RotationField  =  0  [ns=2;i=503033]
+│ │ │ ├─ PF  =  nan  [ns=2;i=503310]
+│ │ │ ├─ Valid  =  True  [ns=2;i=503040]
+│ │ │ ├─ D  =  0.0  [ns=2;i=503130]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=503410]
+│ │ │ ├─ [Object] I2  (ns=2;i=505110)
+│ │ │ ├─ [Object] I1  (ns=2;i=505010)
+│ │ │ ├─ [Object] I3  (ns=2;i=505210)
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=503210]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=503290]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=503190]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=503330]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=503350]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=503150]
+│ │ │ ├─ P  =  0.0  [ns=2;i=503270]
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=503430]
+│ │ │ ├─ [Object] Energies  (ns=2;i=504510)
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=503170]
+│ │ │ ├─ [Object] I4  (ns=2;i=505310)
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=503370]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=503450]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=503250]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=503230]
+│ │ │ ├─ S  =  0.0  [ns=2;i=503390]
+│ │ │ ├─ Name  =  VIRTUAL_METER_2  [ns=2;i=503023]
+│ │ │ └─ Aron  =  0  [ns=2;i=503011]
+│ │ ├─ [Object] Group15  (ns=2;i=542010)
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=542370]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=542190]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=542250]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=542450]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=542330]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=542150]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=542410]
+│ │ │ ├─ [Object] I4  (ns=2;i=544310)
+│ │ │ ├─ [Object] I1  (ns=2;i=544010)
+│ │ │ ├─ Valid  =  True  [ns=2;i=542040]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=542210]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=542470]
+│ │ │ ├─ [Object] Energies  (ns=2;i=543510)
+│ │ │ ├─ [Object] I2  (ns=2;i=544110)
+│ │ │ ├─ RotationField  =  0  [ns=2;i=542033]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ P  =  0.0  [ns=2;i=542270]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=542170]
+│ │ │ ├─ [Object] I3  (ns=2;i=544210)
+│ │ │ ├─ Q  =  0.0  [ns=2;i=542350]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=542230]
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=542430]
+│ │ │ ├─ D  =  0.0  [ns=2;i=542130]
+│ │ │ ├─ PF  =  nan  [ns=2;i=542310]
+│ │ │ ├─ S  =  0.0  [ns=2;i=542390]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=542290]
+│ │ │ ├─ Aron  =  0  [ns=2;i=542011]
+│ │ │ └─ Name  =  VIRTUAL_METER_15  [ns=2;i=542023]
+│ │ ├─ [Object] Group24  (ns=2;i=569010)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=569330]
+│ │ │ ├─ [Object] I1  (ns=2;i=571010)
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ PF  =  nan  [ns=2;i=569310]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=569450]
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=569430]
+│ │ │ ├─ D  =  nan  [ns=2;i=569130]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=569210]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=569170]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=569033]
+│ │ │ ├─ P  =  nan  [ns=2;i=569270]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=569150]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=569250]
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=569470]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=569230]
+│ │ │ ├─ [Object] I2  (ns=2;i=571110)
+│ │ │ ├─ [Object] I3  (ns=2;i=571210)
+│ │ │ ├─ Valid  =  False  [ns=2;i=569040]
+│ │ │ ├─ IRms  =  nan  [ns=2;i=569190]
+│ │ │ ├─ [Object] Energies  (ns=2;i=570510)
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=569410]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=569370]
+│ │ │ ├─ Q  =  nan  [ns=2;i=569350]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ [Object] I4  (ns=2;i=571310)
+│ │ │ ├─ S  =  nan  [ns=2;i=569390]
+│ │ │ ├─ P1  =  nan  [ns=2;i=569290]
+│ │ │ ├─ Aron  =  0  [ns=2;i=569011]
+│ │ │ └─ Name  =  Virtual measurement group 24  [ns=2;i=569023]
+│ │ ├─ [Object] Group16  (ns=2;i=545010)
+│ │ │ ├─ [Object] I2  (ns=2;i=547110)
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ [Object] I1  (ns=2;i=547010)
+│ │ │ ├─ S  =  0.0  [ns=2;i=545390]
+│ │ │ ├─ [Object] Energies  (ns=2;i=546510)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=545250]
+│ │ │ ├─ PF  =  nan  [ns=2;i=545310]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=545350]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=545450]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=545170]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=545210]
+│ │ │ ├─ Valid  =  True  [ns=2;i=545040]
+│ │ │ ├─ D  =  0.0  [ns=2;i=545130]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=545410]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=545190]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=545330]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=545370]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=545230]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=545290]
+│ │ │ ├─ P  =  0.0  [ns=2;i=545270]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=545150]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ RotationField  =  0  [ns=2;i=545033]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ [Object] I3  (ns=2;i=547210)
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=545470]
+│ │ │ ├─ [Object] I4  (ns=2;i=547310)
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=545430]
+│ │ │ ├─ Aron  =  0  [ns=2;i=545011]
+│ │ │ └─ Name  =  VIRTUAL_METER_16  [ns=2;i=545023]
+│ │ ├─ [Object] Group18  (ns=2;i=551010)
+│ │ │ ├─ [Object] I2  (ns=2;i=553110)
+│ │ │ ├─ [Object] I4  (ns=2;i=553310)
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=551430]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=551033]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=551470]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=551370]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=551410]
+│ │ │ ├─ Valid  =  True  [ns=2;i=551040]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=551450]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=551210]
+│ │ │ ├─ S  =  0.0  [ns=2;i=551390]
+│ │ │ ├─ D  =  0.0  [ns=2;i=551130]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=551290]
+│ │ │ ├─ [Object] Energies  (ns=2;i=552510)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=551250]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=551330]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=551350]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=551230]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=551170]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=551150]
+│ │ │ ├─ PF  =  nan  [ns=2;i=551310]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=551190]
+│ │ │ ├─ P  =  0.0  [ns=2;i=551270]
+│ │ │ ├─ [Object] I3  (ns=2;i=553210)
+│ │ │ ├─ [Object] I1  (ns=2;i=553010)
+│ │ │ ├─ Aron  =  0  [ns=2;i=551011]
+│ │ │ └─ Name  =  VIRTUAL_METER_18  [ns=2;i=551023]
+│ │ ├─ [Object] Group4  (ns=2;i=509010)
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=509430]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=509290]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=509250]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=509370]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ RotationField  =  0  [ns=2;i=509033]
+│ │ │ ├─ [Object] I2  (ns=2;i=511110)
+│ │ │ ├─ D  =  0.0  [ns=2;i=509130]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=509190]
+│ │ │ ├─ [Object] Energies  (ns=2;i=510510)
+│ │ │ ├─ PF  =  nan  [ns=2;i=509310]
+│ │ │ ├─ [Object] I4  (ns=2;i=511310)
+│ │ │ ├─ S  =  0.0  [ns=2;i=509390]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=509210]
+│ │ │ ├─ [Object] I1  (ns=2;i=511010)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=509330]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=509410]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=509150]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=509450]
+│ │ │ ├─ [Object] I3  (ns=2;i=511210)
+│ │ │ ├─ Valid  =  True  [ns=2;i=509040]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=509470]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=509170]
+│ │ │ ├─ P  =  0.0  [ns=2;i=509270]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=509230]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=509350]
+│ │ │ ├─ Aron  =  0  [ns=2;i=509011]
+│ │ │ └─ Name  =  VIRTUAL_METER_4  [ns=2;i=509023]
+│ │ ├─ [Object] Group8  (ns=2;i=521010)
+│ │ │ ├─ Q  =  0.0  [ns=2;i=521350]
+│ │ │ ├─ D  =  0.0  [ns=2;i=521130]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=521290]
+│ │ │ ├─ P  =  0.0  [ns=2;i=521270]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ RotationField  =  0  [ns=2;i=521033]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=521150]
+│ │ │ ├─ [Object] I4  (ns=2;i=523310)
+│ │ │ ├─ [Object] I1  (ns=2;i=523010)
+│ │ │ ├─ [Object] I2  (ns=2;i=523110)
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=521470]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=521410]
+│ │ │ ├─ Valid  =  True  [ns=2;i=521040]
+│ │ │ ├─ S  =  0.0  [ns=2;i=521390]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=521170]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=521330]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=521190]
+│ │ │ ├─ PF  =  nan  [ns=2;i=521310]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=521250]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=521230]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ [Object] Energies  (ns=2;i=522510)
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=521450]
+│ │ │ ├─ [Object] I3  (ns=2;i=523210)
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=521430]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=521210]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=521370]
+│ │ │ ├─ Name  =  VIRTUAL_METER_8  [ns=2;i=521023]
+│ │ │ └─ Aron  =  0  [ns=2;i=521011]
+│ │ ├─ [Object] Group19  (ns=2;i=554010)
+│ │ │ ├─ Valid  =  False  [ns=2;i=554040]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ [Object] Energies  (ns=2;i=555510)
+│ │ │ ├─ [Object] I1  (ns=2;i=556010)
+│ │ │ ├─ RotationField  =  0  [ns=2;i=554033]
+│ │ │ ├─ [Object] I4  (ns=2;i=556310)
+│ │ │ ├─ [Object] I2  (ns=2;i=556110)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=554330]
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=554410]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=554250]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=554170]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=554370]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=554450]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ P1  =  nan  [ns=2;i=554290]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=554210]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ Q  =  nan  [ns=2;i=554350]
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=554430]
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=554470]
+│ │ │ ├─ D  =  nan  [ns=2;i=554130]
+│ │ │ ├─ P  =  nan  [ns=2;i=554270]
+│ │ │ ├─ IRms  =  nan  [ns=2;i=554190]
+│ │ │ ├─ PF  =  nan  [ns=2;i=554310]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=554230]
+│ │ │ ├─ S  =  nan  [ns=2;i=554390]
+│ │ │ ├─ [Object] I3  (ns=2;i=556210)
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=554150]
+│ │ │ ├─ Name  =  Virtual measurement group 19  [ns=2;i=554023]
+│ │ │ └─ Aron  =  0  [ns=2;i=554011]
+│ │ ├─ [Object] Group11  (ns=2;i=530010)
+│ │ │ ├─ P1  =  0.0  [ns=2;i=530290]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=530470]
+│ │ │ ├─ [Object] I2  (ns=2;i=532110)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=530330]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=530250]
+│ │ │ ├─ PF  =  nan  [ns=2;i=530310]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=530033]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=530190]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=530410]
+│ │ │ ├─ [Object] I1  (ns=2;i=532010)
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=530230]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=530350]
+│ │ │ ├─ S  =  0.0  [ns=2;i=530390]
+│ │ │ ├─ P  =  0.0  [ns=2;i=530270]
+│ │ │ ├─ Valid  =  True  [ns=2;i=530040]
+│ │ │ ├─ [Object] I3  (ns=2;i=532210)
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=530430]
+│ │ │ ├─ [Object] Energies  (ns=2;i=531510)
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=530150]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=530450]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=530210]
+│ │ │ ├─ D  =  0.0  [ns=2;i=530130]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=530170]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=530370]
+│ │ │ ├─ [Object] I4  (ns=2;i=532310)
+│ │ │ ├─ Name  =  VIRTUAL_METER_11  [ns=2;i=530023]
+│ │ │ └─ Aron  =  0  [ns=2;i=530011]
+│ │ ├─ [Object] Group17  (ns=2;i=548010)
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=548230]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=548370]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ P  =  0.0  [ns=2;i=548270]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=548150]
+│ │ │ ├─ [Object] I1  (ns=2;i=550010)
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=548190]
+│ │ │ ├─ [Object] I3  (ns=2;i=550210)
+│ │ │ ├─ [Object] I2  (ns=2;i=550110)
+│ │ │ ├─ RotationField  =  0  [ns=2;i=548033]
+│ │ │ ├─ [Object] I4  (ns=2;i=550310)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=548330]
+│ │ │ ├─ D  =  0.0  [ns=2;i=548130]
+│ │ │ ├─ S  =  0.0  [ns=2;i=548390]
+│ │ │ ├─ PF  =  nan  [ns=2;i=548310]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ P1  =  0.0  [ns=2;i=548290]
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=548430]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ Q  =  0.0  [ns=2;i=548350]
+│ │ │ ├─ [Object] Energies  (ns=2;i=549510)
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=548210]
+│ │ │ ├─ Valid  =  True  [ns=2;i=548040]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=548470]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=548250]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=548410]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=548170]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=548450]
+│ │ │ ├─ Name  =  VIRTUAL_METER_17  [ns=2;i=548023]
+│ │ │ └─ Aron  =  0  [ns=2;i=548011]
+│ │ ├─ [Object] Group27  (ns=2;i=578010)
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=578430]
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=578470]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ S  =  nan  [ns=2;i=578390]
+│ │ │ ├─ [Object] Energies  (ns=2;i=579510)
+│ │ │ ├─ [Object] I3  (ns=2;i=580210)
+│ │ │ ├─ IRms  =  nan  [ns=2;i=578190]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=578330]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=578150]
+│ │ │ ├─ Q1  =  nan  [ns=2;i=578370]
+│ │ │ ├─ Q  =  nan  [ns=2;i=578350]
+│ │ │ ├─ P  =  nan  [ns=2;i=578270]
+│ │ │ ├─ [Object] I4  (ns=2;i=580310)
+│ │ │ ├─ PF  =  nan  [ns=2;i=578310]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=578230]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=578210]
+│ │ │ ├─ Valid  =  False  [ns=2;i=578040]
+│ │ │ ├─ D  =  nan  [ns=2;i=578130]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=578170]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ P1  =  nan  [ns=2;i=578290]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ [Object] I2  (ns=2;i=580110)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=578250]
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=578410]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=578033]
+│ │ │ ├─ [Object] I1  (ns=2;i=580010)
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=578450]
+│ │ │ ├─ Name  =  Virtual measurement group 27  [ns=2;i=578023]
+│ │ │ └─ Aron  =  0  [ns=2;i=578011]
+│ │ ├─ [Object] Group7  (ns=2;i=518010)
+│ │ │ ├─ Valid  =  True  [ns=2;i=518040]
+│ │ │ ├─ [Object] I2  (ns=2;i=520110)
+│ │ │ ├─ Q  =  0.0  [ns=2;i=518350]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=518250]
+│ │ │ ├─ [Object] Energies  (ns=2;i=519510)
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=518410]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=518330]
+│ │ │ ├─ D  =  0.0  [ns=2;i=518130]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=518190]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=518170]
+│ │ │ ├─ S  =  0.0  [ns=2;i=518390]
+│ │ │ ├─ [Object] I4  (ns=2;i=520310)
+│ │ │ ├─ [Object] I3  (ns=2;i=520210)
+│ │ │ ├─ [Object] I1  (ns=2;i=520010)
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=518230]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=518290]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=518450]
+│ │ │ ├─ PF  =  nan  [ns=2;i=518310]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=518370]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=518033]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=518470]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=518150]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=518210]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ P  =  0.0  [ns=2;i=518270]
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=518430]
+│ │ │ ├─ Name  =  VIRTUAL_METER_7  [ns=2;i=518023]
+│ │ │ └─ Aron  =  0  [ns=2;i=518011]
+│ │ ├─ [Object] Group28  (ns=2;i=581010)
+│ │ │ ├─ Q1  =  nan  [ns=2;i=581370]
+│ │ │ ├─ PF  =  nan  [ns=2;i=581310]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ P1  =  nan  [ns=2;i=581290]
+│ │ │ ├─ IRms  =  nan  [ns=2;i=581190]
+│ │ │ ├─ SymNegative  =  nan  [ns=2;i=581410]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=581330]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=581230]
+│ │ │ ├─ SymZero  =  nan  [ns=2;i=581450]
+│ │ │ ├─ ILoadAvg  =  nan  [ns=2;i=581150]
+│ │ │ ├─ [Object] I4  (ns=2;i=583310)
+│ │ │ ├─ Valid  =  False  [ns=2;i=581040]
+│ │ │ ├─ [Object] I1  (ns=2;i=583010)
+│ │ │ ├─ S  =  nan  [ns=2;i=581390]
+│ │ │ ├─ IAvg  =  nan  [ns=2;i=581210]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=581250]
+│ │ │ ├─ D  =  nan  [ns=2;i=581130]
+│ │ │ ├─ [Object] I2  (ns=2;i=583110)
+│ │ │ ├─ SymUnbalance  =  nan  [ns=2;i=581470]
+│ │ │ ├─ INCalc  =  nan  [ns=2;i=581170]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=581033]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ [Object] I3  (ns=2;i=583210)
+│ │ │ ├─ SymPositive  =  nan  [ns=2;i=581430]
+│ │ │ ├─ [Object] Energies  (ns=2;i=582510)
+│ │ │ ├─ Q  =  nan  [ns=2;i=581350]
+│ │ │ ├─ P  =  nan  [ns=2;i=581270]
+│ │ │ ├─ Aron  =  0  [ns=2;i=581011]
+│ │ │ └─ Name  =  Virtual measurement group 28  [ns=2;i=581023]
+│ │ ├─ [Object] Group12  (ns=2;i=533010)
+│ │ │ ├─ Q  =  0.0  [ns=2;i=533350]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ Valid  =  True  [ns=2;i=533040]
+│ │ │ ├─ [Object] I1  (ns=2;i=535010)
+│ │ │ ├─ [Object] Energies  (ns=2;i=534510)
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=533150]
+│ │ │ ├─ [Object] I4  (ns=2;i=535310)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=533250]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=533450]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=533230]
+│ │ │ ├─ [Object] I3  (ns=2;i=535210)
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=533190]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=533290]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=533370]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=533170]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=533470]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ PF1  =  nan  [ns=2;i=533330]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ D  =  0.0  [ns=2;i=533130]
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=533430]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=533410]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=533210]
+│ │ │ ├─ PF  =  nan  [ns=2;i=533310]
+│ │ │ ├─ [Object] I2  (ns=2;i=535110)
+│ │ │ ├─ S  =  0.0  [ns=2;i=533390]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=533033]
+│ │ │ ├─ P  =  0.0  [ns=2;i=533270]
+│ │ │ ├─ Name  =  VIRTUAL_METER_12  [ns=2;i=533023]
+│ │ │ └─ Aron  =  0  [ns=2;i=533011]
+│ │ ├─ [Object] Group5  (ns=2;i=512010)
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=512230]
+│ │ │ ├─ [Object] I1  (ns=2;i=514010)
+│ │ │ ├─ P1  =  0.0  [ns=2;i=512290]
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=512150]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ [Object] I4  (ns=2;i=514310)
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=512450]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=512370]
+│ │ │ ├─ S  =  0.0  [ns=2;i=512390]
+│ │ │ ├─ D  =  0.0  [ns=2;i=512130]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=512033]
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=512250]
+│ │ │ ├─ PF  =  nan  [ns=2;i=512310]
+│ │ │ ├─ [Object] I2  (ns=2;i=514110)
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=512170]
+│ │ │ ├─ [Object] Energies  (ns=2;i=513510)
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=512190]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=512410]
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ P  =  0.0  [ns=2;i=512270]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=512330]
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=512430]
+│ │ │ ├─ Valid  =  True  [ns=2;i=512040]
+│ │ │ ├─ [Object] I3  (ns=2;i=514210)
+│ │ │ ├─ Q  =  0.0  [ns=2;i=512350]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=512470]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=512210]
+│ │ │ ├─ Name  =  VIRTUAL_METER_5  [ns=2;i=512023]
+│ │ │ └─ Aron  =  0  [ns=2;i=512011]
+│ │ ├─ [Object] Group14  (ns=2;i=539010)
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=539230]
+│ │ │ ├─ [Object] I2  (ns=2;i=541110)
+│ │ │ ├─ [Object] I3  (ns=2;i=541210)
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=539150]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=539410]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=539290]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=539450]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=539330]
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=539210]
+│ │ │ ├─ D  =  0.0  [ns=2;i=539130]
+│ │ │ ├─ [Object] I4  (ns=2;i=541310)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=539250]
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=539430]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=539350]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=539170]
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=539470]
+│ │ │ ├─ S  =  0.0  [ns=2;i=539390]
+│ │ │ ├─ Valid  =  True  [ns=2;i=539040]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=539370]
+│ │ │ ├─ [Object] Energies  (ns=2;i=540510)
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ [Object] I1  (ns=2;i=541010)
+│ │ │ ├─ P  =  0.0  [ns=2;i=539270]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=539033]
+│ │ │ ├─ PF  =  nan  [ns=2;i=539310]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=539190]
+│ │ │ ├─ Aron  =  0  [ns=2;i=539011]
+│ │ │ └─ Name  =  VIRTUAL_METER_14  [ns=2;i=539023]
+│ │ ├─ [Object] Group3  (ns=2;i=506010)
+│ │ │ ├─ D  =  0.0  [ns=2;i=506130]
+│ │ │ ├─ IThdAvg  =  nan  [ns=2;i=506230]
+│ │ │ ├─ SymNegative  =  0.0  [ns=2;i=506410]
+│ │ │ ├─ Valid  =  True  [ns=2;i=506040]
+│ │ │ ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │ │ ├─ ILoadAvg  =  0.0  [ns=2;i=506150]
+│ │ │ ├─ PF1  =  nan  [ns=2;i=506330]
+│ │ │ ├─ SymPositive  =  0.0  [ns=2;i=506430]
+│ │ │ ├─ [Object] I4  (ns=2;i=508310)
+│ │ │ ├─ ITddAvg  =  nan  [ns=2;i=506250]
+│ │ │ ├─ Q  =  0.0  [ns=2;i=506350]
+│ │ │ ├─ INCalc  =  0.0  [ns=2;i=506170]
+│ │ │ ├─ P  =  0.0  [ns=2;i=506270]
+│ │ │ ├─ SymZero  =  0.0  [ns=2;i=506450]
+│ │ │ ├─ RotationField  =  0  [ns=2;i=506033]
+│ │ │ ├─ IRms  =  0.0  [ns=2;i=506190]
+│ │ │ ├─ [Object] Energies  (ns=2;i=507510)
+│ │ │ ├─ [Object] I3  (ns=2;i=508210)
+│ │ │ ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │ │ ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │ │ ├─ SymUnbalance  =  0.0  [ns=2;i=506470]
+│ │ │ ├─ P1  =  0.0  [ns=2;i=506290]
+│ │ │ ├─ [Object] I1  (ns=2;i=508010)
+│ │ │ ├─ S  =  0.0  [ns=2;i=506390]
+│ │ │ ├─ [Object] I2  (ns=2;i=508110)
+│ │ │ ├─ IAvg  =  0.0  [ns=2;i=506210]
+│ │ │ ├─ Q1  =  0.0  [ns=2;i=506370]
+│ │ │ ├─ PF  =  nan  [ns=2;i=506310]
+│ │ │ ├─ Name  =  VIRTUAL_METER_3  [ns=2;i=506023]
+│ │ │ └─ Aron  =  0  [ns=2;i=506011]
+│ │ └─ [Object] Group9  (ns=2;i=524010)
+│ │   ├─ INCalc  =  0.0  [ns=2;i=524170]
+│ │   ├─ ILoadAvg  =  0.0  [ns=2;i=524150]
+│ │   ├─ [Method] SetChannelConfig  (ns=2;i=7868)
+│ │   ├─ RotationField  =  0  [ns=2;i=524033]
+│ │   ├─ P1  =  0.0  [ns=2;i=524290]
+│ │   ├─ [Object] Energies  (ns=2;i=525510)
+│ │   ├─ Q1  =  0.0  [ns=2;i=524370]
+│ │   ├─ SymZero  =  0.0  [ns=2;i=524450]
+│ │   ├─ [Object] I2  (ns=2;i=526110)
+│ │   ├─ PF1  =  nan  [ns=2;i=524330]
+│ │   ├─ [Object] I4  (ns=2;i=526310)
+│ │   ├─ SymNegative  =  0.0  [ns=2;i=524410]
+│ │   ├─ P  =  0.0  [ns=2;i=524270]
+│ │   ├─ PF  =  nan  [ns=2;i=524310]
+│ │   ├─ IAvg  =  0.0  [ns=2;i=524210]
+│ │   ├─ S  =  0.0  [ns=2;i=524390]
+│ │   ├─ IRms  =  0.0  [ns=2;i=524190]
+│ │   ├─ D  =  0.0  [ns=2;i=524130]
+│ │   ├─ SymUnbalance  =  0.0  [ns=2;i=524470]
+│ │   ├─ Valid  =  True  [ns=2;i=524040]
+│ │   ├─ Q  =  0.0  [ns=2;i=524350]
+│ │   ├─ SymPositive  =  0.0  [ns=2;i=524430]
+│ │   ├─ [Method] DeleteEnergies  (ns=2;i=7699)
+│ │   ├─ [Method] DeleteStatistics  (ns=2;i=7701)
+│ │   ├─ [Object] I1  (ns=2;i=526010)
+│ │   ├─ ITddAvg  =  nan  [ns=2;i=524250]
+│ │   ├─ IThdAvg  =  nan  [ns=2;i=524230]
+│ │   ├─ [Object] I3  (ns=2;i=526210)
+│ │   ├─ Aron  =  0  [ns=2;i=524011]
+│ │   └─ Name  =  VIRTUAL_METER_9  [ns=2;i=524023]
+│ ├─ [Object] Logic  (ns=2;i=20000)
+│ │ ├─ [Method] CreateComparator  (ns=2;i=7035)
+│ │ │ └─ OutputArguments  =  [Argument(Name='NodeId', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The node ID of the new comparator.'))]  [ns=2;i=6828]
+│ │ ├─ [Method] DeleteComparator  (ns=2;i=7105)
+│ │ │ └─ InputArguments  =  [Argument(Name='Id', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The ID of the comparator to delete.'))]  [ns=2;i=6830]
+│ │ ├─ [Method] DeleteAllComparators  (ns=2;i=7107)
+│ │ ├─ UsedComparisons  =  6  [ns=2;i=20006]
+│ │ ├─ MaxComparators  =  32  [ns=2;i=20004]
+│ │ ├─ MaxComparisons  =  125  [ns=2;i=20005]
+│ │ ├─ [Object] Comparator2  (ns=2;i=21200)
+│ │ │ ├─ [Method] CreateComparison  (ns=2;i=7398)
+│ │ │ ├─ [Method] DeleteAllComparisons  (ns=2;i=7400)
+│ │ │ ├─ Valid  =  True  [ns=2;i=21203]
+│ │ │ ├─ Value  =  False  [ns=2;i=21204]
+│ │ │ ├─ [Method] DeleteComparison  (ns=2;i=7399)
+│ │ │ ├─ MinimalOutputDuration  =  0  [ns=2;i=100005893]
+│ │ │ ├─ Id  =  2  [ns=2;i=21201]
+│ │ │ ├─ Invert  =  False  [ns=2;i=100005894]
+│ │ │ ├─ MinimalInputDuration  =  2000  [ns=2;i=100005892]
+│ │ │ ├─ Operator  =  1  [ns=2;i=100005895]
+│ │ │ ├─ Name  =  UNDERVOLTAGE_5_PERCENT  [ns=2;i=21202]
+│ │ │ ├─ [Object] Comparison5  (ns=2;i=21242)
+│ │ │ ├─ [Object] Comparison6  (ns=2;i=21250)
+│ │ │ └─ [Object] Comparison4  (ns=2;i=21234)
+│ │ └─ [Object] Comparator1  (ns=2;i=20100)
+│ │   ├─ [Method] CreateComparison  (ns=2;i=7398)
+│ │   ├─ [Method] DeleteAllComparisons  (ns=2;i=7400)
+│ │   ├─ Valid  =  True  [ns=2;i=20103]
+│ │   ├─ Value  =  False  [ns=2;i=20104]
+│ │   ├─ [Method] DeleteComparison  (ns=2;i=7399)
+│ │   ├─ MinimalInputDuration  =  2000  [ns=2;i=100005843]
+│ │   ├─ Name  =  OVERVOLTAGE_5_PERCENT  [ns=2;i=20102]
+│ │   ├─ Invert  =  False  [ns=2;i=100005845]
+│ │   ├─ Id  =  1  [ns=2;i=20101]
+│ │   ├─ MinimalOutputDuration  =  0  [ns=2;i=100005844]
+│ │   ├─ Operator  =  1  [ns=2;i=100005846]
+│ │   ├─ [Object] Comparison3  (ns=2;i=20126)
+│ │   ├─ [Object] Comparison2  (ns=2;i=20118)
+│ │   └─ [Object] Comparison1  (ns=2;i=20110)
+│ └─ [Object] Maintenance  (ns=2;i=13000)
+│   ├─ [Method] IdentifyAllModules  (ns=2;i=870)
+│   │ └─ InputArguments  =  [Argument(Name='SecondsToEnable', DataType=NodeId(Identifier=5, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='If the functionality is enabled.'))]  [ns=2;i=853]
+│   ├─ [Method] FactorySettings  (ns=2;i=1753)
+│   ├─ UpSince  =  2026-06-18 12:42:47+00:00  [ns=2;i=13036]
+│   ├─ [Method] Reboot  (ns=2;i=223)
+│   ├─ [Object] Update  (ns=2;i=13100)
+│   │ ├─ [Method] Start  (ns=2;i=7509)
+│   │ ├─ State  =  0  [ns=2;i=13102]
+│   │ ├─ [Object] File  (ns=2;i=13110)
+│   │ └─ Downgradable  =  False  [ns=2;i=13101]
+│   ├─ State  =  3  [ns=2;i=13035]
+│   ├─ ErrorFlags  =  None  [ns=2;i=13033]
+│   ├─ PingCount  =  0  [ns=2;i=13034]
+│   ├─ [Object] Screenshot  (ns=2;i=13200)
+│   │ ├─ State  =  0  [ns=2;i=13202]
+│   │ ├─ [Object] File  (ns=2;i=13210)
+│   │ └─ [Method] TakeScreenshot  (ns=2;i=7088)
+│   ├─ [Object] LogFile  (ns=2;i=13150)
+│   │ ├─ [Method] Close  (ns=2;i=7003)
+│   │ ├─ [Method] Open  (ns=2;i=7008)
+│   │ ├─ [Method] Read  (ns=2;i=7009)
+│   │ ├─ [Method] GetPosition  (ns=2;i=7006)
+│   │ ├─ [Method] Write  (ns=2;i=7043)
+│   │ ├─ [Method] SetPosition  (ns=2;i=7010)
+│   │ ├─ Size  =  482806  [ns=2;i=13153]
+│   │ ├─ OpenCount  =  0  [ns=2;i=13152]
+│   │ ├─ Writable  =  False  [ns=2;i=13155]
+│   │ └─ UserWritable  =  False  [ns=2;i=13154]
+│   ├─ UpTime  =  23100  [ns=2;i=13037]
+│   ├─ Battery  =  4  [ns=2;i=13032]
+│   ├─ BootCount  =  249  [ns=2;i=13045]
+│   ├─ [Method] IdentifySingleModule  (ns=2;i=871)
+│   │ └─ InputArguments  =  [Argument(Name='Position', DataType=NodeId(Identifier=5, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The identifiying (physical) position of the module to access.')), Argument(Name='SecondsToEnable', DataType=NodeId(Identifier=5, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The seconds to enable the LED of the module. Use 0 to turn off manually.'))]  [ns=2;i=851]
+│   └─ [Method] Ping  (ns=2;i=222)
+│     └─ OutputArguments  =  [Argument(Name='PingCount', DataType=NodeId(Identifier=7, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale='', Text='The new ping count.'))]  [ns=2;i=208]
+└─ [Object] Aliases  (i=23470)
+  ├─ [Object] Topics  (i=23488)
+  │ └─ [Method] FindAlias  (i=23494)
+  │   ├─ InputArguments  =  [Argument(Name='AliasNameSearchPattern', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='ReferenceTypeFilter', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=23495]
+  │   └─ OutputArguments  =  [Argument(Name='AliasNodeList', DataType=NodeId(Identifier=23468, NamespaceIndex=0, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=23496]
+  ├─ [Object] TagVariables  (i=23479)
+  │ └─ [Method] FindAlias  (i=23485)
+  │   ├─ InputArguments  =  [Argument(Name='AliasNameSearchPattern', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='ReferenceTypeFilter', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=23486]
+  │   └─ OutputArguments  =  [Argument(Name='AliasNodeList', DataType=NodeId(Identifier=23468, NamespaceIndex=0, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=23487]
+  └─ [Method] FindAlias  (i=23476)
+    ├─ InputArguments  =  [Argument(Name='AliasNameSearchPattern', DataType=NodeId(Identifier=12, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None)), Argument(Name='ReferenceTypeFilter', DataType=NodeId(Identifier=17, NamespaceIndex=0, NodeIdType=<NodeIdType.TwoByte: 0>), ValueRank=-1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=23477]
+    └─ OutputArguments  =  [Argument(Name='AliasNodeList', DataType=NodeId(Identifier=23468, NamespaceIndex=0, NodeIdType=<NodeIdType.FourByte: 1>), ValueRank=1, ArrayDimensions=None, Description=LocalizedText(Locale=None, Text=None))]  [i=23478]
+
+Done. Use --modbus to filter Modbus devices only.

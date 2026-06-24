@@ -1,0 +1,7 @@
+node_modules/
+opc_env/
+__pycache__/
+*.pyc
+*.gwbk
+.env
+*.log

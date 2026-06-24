@@ -1,0 +1,9 @@
+{
+  "name": "opc-bridge",
+  "version": "1.0.0",
+  "main": "bridge.js",
+  "dependencies": {
+    "node-opcua": "^2.119.0",
+    "pg": "^8.13.0"
+  }
+}

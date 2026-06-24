@@ -3,5 +3,6 @@ opc_env/
 __pycache__/
 *.pyc
 *.gwbk
+!backups/*.gwbk
 .env
 *.log

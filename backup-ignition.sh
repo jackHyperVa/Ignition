@@ -48,12 +48,17 @@ echo "[4/5] Committing to git branch '${BRANCH}'..."
 # Track current branch so we can return after committing backup
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
-# Create backups branch from main if it doesn't exist remotely
-if ! git show-ref --quiet "refs/remotes/origin/${BRANCH}"; then
-    git checkout -b "${BRANCH}" origin/main 2>/dev/null || git checkout -b "${BRANCH}" main
-else
+# Switch to backups branch (create if needed)
+if git show-ref --quiet "refs/heads/${BRANCH}"; then
+    # Branch exists locally
     git checkout "${BRANCH}"
-    git pull --ff-only origin "${BRANCH}"
+    git pull --ff-only origin "${BRANCH}" 2>/dev/null || true
+elif git show-ref --quiet "refs/remotes/origin/${BRANCH}"; then
+    # Branch exists on remote only
+    git checkout -b "${BRANCH}" "origin/${BRANCH}"
+else
+    # Brand new branch
+    git checkout -b "${BRANCH}" main
 fi
 
 git add "${LOCAL_BACKUP_PATH}"

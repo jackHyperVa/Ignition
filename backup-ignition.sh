@@ -49,19 +49,17 @@ echo "[4/5] Committing to git branch '${BRANCH}'..."
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
 # Switch to backups branch (create if needed)
+# Use -f to avoid blocking on untracked session/cache files
 if git show-ref --quiet "refs/heads/${BRANCH}"; then
-    # Branch exists locally
-    git checkout "${BRANCH}"
+    git checkout -f "${BRANCH}"
     git pull --ff-only origin "${BRANCH}" 2>/dev/null || true
 elif git show-ref --quiet "refs/remotes/origin/${BRANCH}"; then
-    # Branch exists on remote only
-    git checkout -b "${BRANCH}" "origin/${BRANCH}"
+    git checkout -f -b "${BRANCH}" "origin/${BRANCH}"
 else
-    # Brand new branch
-    git checkout -b "${BRANCH}" main
+    git checkout -f -b "${BRANCH}" main
 fi
 
-git add "${LOCAL_BACKUP_PATH}"
+git add -f "${LOCAL_BACKUP_PATH}"
 git commit -m "Ignition gateway backup ${TIMESTAMP}
 
 Live backup taken via gwcmd from container '${CONTAINER}'.
@@ -79,7 +77,7 @@ echo "[5/5] Pushing to origin/${BRANCH}..."
 git push -u origin "${BRANCH}"
 
 # Return to original branch
-git checkout "${CURRENT_BRANCH}" 2>/dev/null || true
+git checkout -f "${CURRENT_BRANCH}" 2>/dev/null || true
 
 echo ""
 echo "=== Backup complete ==="

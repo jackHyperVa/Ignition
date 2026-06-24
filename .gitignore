@@ -6,3 +6,23 @@ __pycache__/
 !backups/*.gwbk
 .env
 *.log
+
+# Home directory system files
+.bash_history
+.bash_logout
+.bashrc
+.bashrc.d/
+.profile
+.cache/
+.config/
+.claude/
+.claude.json
+.docker/
+.face
+.face.icon
+.git-credentials
+.gitconfig
+.local/
+.npm/
+.ssh/
+.sudo_as_admin_successful

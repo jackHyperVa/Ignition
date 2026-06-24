@@ -45,9 +45,8 @@ echo "      Backup size: ${FILESIZE}"
 # --- 5. Git: switch to backups branch, commit, push ---
 echo "[4/5] Committing to git branch '${BRANCH}'..."
 
-# Stash any in-progress work on current branch before switching
+# Track current branch so we can return after committing backup
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-git add --all 2>/dev/null || true
 
 # Create backups branch from main if it doesn't exist remotely
 if ! git show-ref --quiet "refs/remotes/origin/${BRANCH}"; then
@@ -57,7 +56,7 @@ else
     git pull --ff-only origin "${BRANCH}"
 fi
 
-git add "${LOCAL_BACKUP_PATH}" .gitignore
+git add "${LOCAL_BACKUP_PATH}"
 git commit -m "Ignition gateway backup ${TIMESTAMP}
 
 Live backup taken via gwcmd from container '${CONTAINER}'.

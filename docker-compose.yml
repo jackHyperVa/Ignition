@@ -1,0 +1,47 @@
+services:
+  ignition:
+    image: inductiveautomation/ignition:latest
+    container_name: ignition
+    ports:
+      - "8088:8088"
+      - "8043:8043"
+    environment:
+      - ACCEPT_IGNITION_EULA=Y
+      - GATEWAY_ADMIN_USERNAME=admin
+      - GATEWAY_ADMIN_PASSWORD=password
+    volumes:
+      - ignition-data:/usr/local/bin/ignition/data
+    networks:
+      - datacenter-net
+    extra_hosts:
+      - "host.docker.internal:192.200.0.1"
+    restart: unless-stopped
+
+  opc-ua-simulator:
+    build: ./ignition-simulator
+    container_name: opc-ua-simulator
+    ports:
+      - "4840:4840"
+    networks:
+      - datacenter-net
+    restart: unless-stopped
+
+  node-app:
+    build: .
+    container_name: node-docker-app
+    ports:
+      - "3000:3000"
+    networks:
+      - datacenter-net
+    restart: unless-stopped
+
+volumes:
+  ignition-data:
+
+networks:
+  datacenter-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.200.0.0/24
+          gateway: 192.200.0.1

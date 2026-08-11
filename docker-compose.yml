@@ -17,6 +17,21 @@ services:
       - "host.docker.internal:192.200.0.1"
     restart: unless-stopped
 
+  ignition-timescaledb:
+    image: timescale/timescaledb:latest-pg16
+    container_name: ignition-timescaledb
+    environment:
+      - POSTGRES_USER=ignition
+      - POSTGRES_PASSWORD=${IGNITION_TIMESCALEDB_PASSWORD}
+      - POSTGRES_DB=ignition
+    ports:
+      - "192.168.1.253:5434:5432"
+    volumes:
+      - ignition-timescaledb-data:/var/lib/postgresql/data
+    networks:
+      - datacenter-net
+    restart: unless-stopped
+
   opc-ua-simulator:
     build: ./ignition-simulator
     container_name: opc-ua-simulator
@@ -37,6 +52,7 @@ services:
 
 volumes:
   ignition-data:
+  ignition-timescaledb-data:
 
 networks:
   datacenter-net:
